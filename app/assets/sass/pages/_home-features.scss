@@ -3,130 +3,116 @@
 // Home features section
 // -----------------------------------------------------------------------------
 
+.home-feature {
+  display: flex;
+  flex-direction: column;
+  padding: $padding-base;
 
+  @media (min-width: $screen-sm-min) {
+    flex-direction: row;
+    align-items: center;
+  }
 
+  a {
+    color: rgba(255, 255, 255, 0.8);
+    @include on-event {
+      color: rgba(255, 255, 255, 1);
+      text-decoration: $link-hover-decoration;
+    }
+  }
 
-.home-feature{
-    display: flex;
+  &__details {
+    //max-width: 600px;
+    //display: flex;
     flex-direction: column;
-    padding: $padding-base;
 
-     @media (min-width: $screen-sm-min) {
-        flex-direction: row;
-        align-items: center;
-
-     }
-
-    a{
-        color: rgba(255,255,255,.8);
-            @include on-event {
-            color: rgba(255,255,255,1);
-            text-decoration: $link-hover-decoration;
-            }
+    @media (min-width: $screen-sm-min) {
+      //margin-right: 5*$padding-base;
+      flex-direction: row;
     }
 
-    &__details {
-        //max-width: 600px;
-        display: flex;
-        flex-direction: column;
-
-        @media (min-width: $screen-sm-min) {
-            //margin-right: 5*$padding-base;
-            flex-direction: row;
-        }
-
-        &--light-txt{
-            color: #fff;
-        }
+    &--light-txt {
+      color: #fff;
     }
+  }
 
-    &__thumb{
-       //padding: 5*$padding-base 5*$padding-base; 
+  &__thumb {
+    //padding: 5*$padding-base 5*$padding-base;
 
-        @media (min-width: $screen-sm-min) {
-            padding: 2*$padding-base; 
-            margin-left: auto;
-            max-width: 460px;
-        }
+    @media (min-width: $screen-sm-min) {
+      padding: 2 * $padding-base;
+      margin-left: auto;
+      max-width: 500px;
     }
+  }
 
-    &__detail-block{
-        margin: 0 0 0 0;
+  &__detail-block {
+    margin: 0 0 0 0;
 
-        @media (min-width: $screen-sm-min) {
-             margin: 0 7*$padding-base 0 0;
-        }
+    @media (min-width: $screen-sm-min) {
+      margin: 0 7 * $padding-base 0 0;
     }
+  }
 
-
-    &__img{
-        width: 100%;
-        height: auto;
-        display: block;
+  &__img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  &__title {
+    margin: 0 0 2rem 0;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    font-weight: 500;
+    //font-family: $headings-font-family;
+    @media (min-width: $screen-md-min) {
+      font-size: 2rem;
     }
-    &__title {
-        margin: 0 0 2rem 0;
-        font-size: 1.6rem;
-        line-height: 1.4;
-        font-weight: 500;
-        //font-family: $headings-font-family;
-         @media (min-width: $screen-md-min) { font-size: 2rem; }
+  }
+
+  &__subtitle {
+    margin: 0 0 1rem 0;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    font-weight: 500;
+    //font-family: $headings-font-family;
+
+    @media (min-width: $screen-md-min) {
+      font-size: 2rem;
     }
+  }
 
-    &__subtitle {
-        margin: 0 0 1rem 0;
-        font-size: 1.6rem;
-        line-height: 1.4;
-        font-weight: 500;
-        //font-family: $headings-font-family;
+  &__lead {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
 
-        @media (min-width: $screen-md-min) { font-size: 2rem;}
-    }
-
-    &__lead{
-        font-size: 1.6rem;
-        line-height: 1.4;
-    }
-
-    &__btn{
-
-    }
+  &__btn {
+  }
 }
-
-
 
 .home-feature-list {
-    list-style: none;
-    margin: 0 0 3rem 0;
-    padding: 0;
+  list-style: none;
+  margin: 0 0 3rem 0;
+  padding: 0;
 
-    &__item{
-        font-size: 1.6rem;
-        line-height: 1.4;
-        margin: .5rem 0;
-        padding: 0 0 0 2.5*$padding-base;
-        position: relative;
+  &__item {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    margin: 0.5rem 0;
+    padding: 0 0 0 2.5 * $padding-base;
+    position: relative;
 
-        &::before{
-            content: "";
-            background-color: rgba(255,255,255,.5);
-            border-radius: 50%;
-            width: 7px;
-            height: 7px;
-            display: block;
-            position: absolute;
-            left: 0;
-            top: 8px;
-            
-
-        }
+    &::before {
+      content: "";
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      width: 7px;
+      height: 7px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 8px;
     }
+  }
 }
-
-
-
-
-
-
-
-
