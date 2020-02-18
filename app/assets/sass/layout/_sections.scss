@@ -27,6 +27,13 @@
   &--secondary {
     background-color: $brand-secondary;
   }
+  &--secondary-gradient {
+    background: linear-gradient(
+      142deg,
+      rgba(40, 66, 124, 0.95),
+      rgba(0, 179, 138, 0.95)
+    );
+  }
 
   &--light-tint {
     background-color: #f5f5f5;
