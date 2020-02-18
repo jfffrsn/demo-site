@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Page Title - CompanyName</title>
+
+    <link href="css/plugins.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/master.css" rel="stylesheet" type="text/css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/icons/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/icons/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link rel="manifest" href="img/icons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="img/icons/safari-pinned-tab.svg"
+      color="#13365c"
+    />
+    <link rel="shortcut icon" href="img/icons/favicon.ico" />
+    <meta name="msapplication-config" content="img/icons/browserconfig.xml" />
+    <meta name="msapplication-TileColor" content="#13365c" />
+    <meta name="theme-color" content="#13365c" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <a id="top" class="element-invisible"></a
+    ><!-- back to top anchor -->
+    <div id="skip"><a href="#maincontent">Skip Navigation</a></div>
+    <!-- skip nav -->
+
+    <!-- page just wraps the header, main and footer -->
+    <div class="page">
+      <!-- HEADER -->
+      <header role="banner" class="site-header">
+        <div class="site-header__container">
+          <div class="site-header__row">
+            <div class="site-header__col">
+              <div class="topbar">
+                <div class="topbar__container">
+                  <div class="topbar__row">
+                    <div class="topbar__col">
+                      <div class="topbar-nav">
+                        <ul class="topbar-nav-list">
+                          <li class="topbar-nav-list__item hidden-sm">
+                            <a href="" class="topbar-nav-list__link"
+                              ><span class="topbar-nav-list__txt"
+                                >Sign Out</span
+                              ></a
+                            >
+                          </li>
+                          <!-- /.topbar-nav-list__item -->
+                          <li class="topbar-nav-list__item">
+                            <a href="" class="topbar-nav-list__link"
+                              ><span class="topbar-nav-list__txt"
+                                >Contact Us</span
+                              ></a
+                            >
+                          </li>
+                          <!-- /.topbar-nav-list__item -->
+                          <li class="topbar-nav-list__item">
+                            <a href="" class="topbar-nav-list__link">
+                              <span class="topbar-cart-indicator">
+                                <span class="topbar-cart-icon"></span>
+                                <span class="topbar-cart-count">1</span>
+                              </span>
+                              <span class="topbar-nav-list__txt">Cart</span></a
+                            >
+                          </li>
+                          
+                          <!-- /.topbar-nav-list__item -->
+                          <li class="topbar-nav-list__item">
+                            <a href="" class="topbar-nav-list__link"
+                              ><span class="topbar-nav-list__txt"
+                                ></span
+                              ></a
+                            >
+                          </li>
+                          <!-- /.topbar-nav-list__item -->
+                        </ul>
+                        <!-- /.topbar-nav-list -->
+                      </div>
+                      <!-- /.topbar-nav -->
+
+                      <div class="topbar-search">
+                        <div class="topbar-search__form">
+                          <label for="#search" class="topbar-search__label"
+                            >Keyword Search</label
+                          >
+                          <input
+                            type="search"
+                            class="topbar-search__field"
+                            placeholder="Keyword Search"
+                          />
+                          <input type="submit" class="topbar-search__btn" />
+                        </div>
+                        <!-- /.topbar-search__form -->
+                      </div>
+                      <!-- /.topbar-search -->
+
+                      <div class="topbar-toggles">
+                        <!-- searchicon -->
+                        <button
+                          class=""
+                          aria-label="Toggle search"
+                          role="button"
+                          tabindex="0"
+                          aria-expanded="false"
+                          id="nav-search"
+                          data-toggle="collapse"
+                          data-target="#mobileSearch"
+                        >
+                          <span class="header-nav-btn__icon">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 23 24"
+                            >
+                              <path
+                                fill="#fff"
+                                d="M2.9 2.4C-.7 5.7-1 11.5 2.4 15.2c2.8 3.1 7.4 3.8 11 1.9l6.5 7 3.1-3-6.4-6.8c2.3-3.4 2-8-.8-11.2C12.4-.8 6.6-1 2.9 2.4zM5.4 5c2.2-2 5.6-1.9 7.6.3s1.9 5.6-.3 7.6-5.6 2-7.7-.3-1.8-5.5.4-7.6z"
+                              />
+                            </svg>
+                          </span>
+                          <span class="sr-only">Search</span>
+                        </button>
+                        <!-- searchicon -->
+
+                        <!-- navicon -->
+                        <button
+                          aria-label="Toggle navigation"
+                          role="button"
+                          tabindex="0"
+                          aria-expanded="false"
+                          class=""
+                          id="nav-icon"
+                          data-toggle="collapse"
+                          data-target="#mobileNav"
+                        >
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </button>
+                        <!-- navicon -->
+                      </div>
+                      <!-- /.topbar-toggles -->
+                    </div>
+                    <!-- /.topbar__col -->
+                  </div>
+                  <!-- /.topbar__row -->
+                </div>
+                <!-- /.topbar__container -->
+              </div>
+              <!-- /.topbar -->
+
+              <div class="topnavbar">
+                <div class="topnavbar__container">
+                  <div class="topnavbar__row">
+                    <div class="topnavbar__col">
+                      <div class="header-logo">
+                        <img
+                          src="img/header/site-logo.svg"
+                          class="header-logo__img"
+                          alt="Virtual ICMA"
+                        />
+                      </div>
+                      <!-- /.header-logo -->                     <div class="header-nav" role="navigation">
+                        <ul class="header-nav-list">
+                          <li class="header-nav-list__item">
+                            <a href="index.html" class="header-nav-list__link">Home</a>
+                          </li>
+                          <!-- /.header-nav-list__item -->
+
+                          
+
+                          <li class="header-nav-list__item">
+                            <a href="" class="header-nav-list__link">About</a>
+                          </li>
+                          <!-- /.header-nav-list__item -->
+                          <li class="header-nav-list__item">
+                            <a href="search.html" class="header-nav-list__link">Watch</a>
+                          </li>
+                          <!-- /.header-nav-list__item -->
+                          <li class="header-nav-list__item">
+                            <a href="meetings.html" class="header-nav-list__link"
+                              >Conferences</a
+                            >
+                          </li>
+                          <!-- /.header-nav-list__item -->
+                          <li class="header-nav-list__item">
+                            <a href="user-meetings.html" class="header-nav-list__link"
+                              >Exhibitors & Sponsors</a
+                            >
+                          </li>
+                          <!-- /.header-nav-list__item -->
+                          <li class="header-nav-list__item">
+                            <a href="" class="header-nav-list__link"
+                              >ICMA</a
+                            >
+                          </li>
+                          <!-- /.header-nav-list__item -->
+                        </ul>
+                        <!-- /.header-nav-list -->
+                      </div>
+                      <!-- /.header-nav -->
+                    </div>
+                    <!-- /.topnavbar__col -->
+                  </div>
+                  <!-- /.topnavbar__row -->
+                </div>
+                <!-- /.topnavbar__container -->
+              </div>
+              <!-- /.topnavbar -->
+            </div>
+            <!-- /.site-header__col -->
+          </div>
+          <!-- /.site-header__row -->
+        </div>
+        <!-- /.site-header__container -->
+
+        <div id="mobileSearch" class="collapse">
+          <div class="header-nav-search">
+            <form action="" class="header-nav-search-form">
+              <div class="header-nav-search-form__form-group">
+                <div
+                  class="header-nav-search-form__form-control header-nav-search-form__form-control--label"
+                >
+                  <label class="header-nav-search-form__label" for="search"
+                    >Search</label
+                  >
+                </div>
+                <!-- /.header-nav-search-form__control -->
+
+                <div
+                  class="header-nav-search-form__form-control header-nav-search-form__form-control--field"
+                >
+                  <input
+                    type="text"
+                    placeholder="Search..."
+                    id="search"
+                    value=""
+                    class="header-nav-search-form__input"
+                  />
+                </div>
+                <!-- /.header-nav-search-form__control -->
+
+                <div
+                  class="header-nav-search-form__form-control header-nav-search-form__form-control--btn"
+                >
+                  <input
+                    type="button"
+                    class="header-nav-search-form__btn"
+                    value="Search"
+                    onclick="window.location.href='search.html';"
+                  />
+                </div>
+                <!-- /.header-nav-search-form__control -->
+              </div>
+              <!-- /.header-nav-search-form__form-group -->
+            </form>
+          </div>
+          <!-- /.header-nav-search -->
+        </div>
+        <!-- /#mobileSearch -->
+
+        <div id="mobileNav" class="collapse">
+          <nav role="navigation" class="mobile-nav">
+            <div class="mobile-nav__auth">
+              <a class="mobile-nav__auth-link" href="">Sign Out</a>
+            </div>
+
+            <ul class="mobile-nav-primary">
+              <li class="mobile-nav-primary__item">
+                <a href="" class="mobile-nav-primary__link">Home</a>
+              </li>
+              <li class="mobile-nav-primary__item">
+                <a
+                  href="#mnAccount"
+                  class="mobile-nav-primary__link mobile-nav-primary__link--has-children"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  aria-controls="mnAccount"
+                  >My Library</a
+                >
+                <ul class="mobile-nav-secondary collapse" id="mnAccount">
+                  <li class="mobile-nav-secondary__item">
+                    <a href="" class="mobile-nav-secondary__link"
+                      >My Dashboard</a
+                    >
+                  </li>
+                  <li class="mobile-nav-secondary__item">
+                    <a href="" class="mobile-nav-secondary__link"
+                      >Viewing History</a
+                    >
+                  </li>
+                  <li class="mobile-nav-secondary__item">
+                    <a href="" class="mobile-nav-secondary__link"
+                      >AICP-CM Activities</a
+                    >
+                  </li>
+                  <li class="mobile-nav-secondary__item">
+                    <a href="" class="mobile-nav-secondary__link">Logout</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mobile-nav-primary__item">
+                <a href="" class="mobile-nav-primary__link"
+                  >Find a presentation</a
+                >
+              </li>
+              <li class="mobile-nav-primary__item">
+                <a href="meetings.html" class="mobile-nav-primary__link"
+                  >Meetings</a
+                >
+              </li>
+              <li class="mobile-nav-primary__item">
+                <a href="" class="mobile-nav-primary__link">Help</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- /.mobile-nav -->
+        </div>
+        <!-- .#mobileNav -->
+      </header>
+      <!-- site-header -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- MAIN -->
+
+<main role="main" id="maincontent" class="site-main">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section section--sm-pad section--gradient">
+<div class="section__container">
+<div class="section__row">
+<div class="section__col">
+
+<div class="section-header">
+<h1 class="section-header__title">My Library</h1>
+<!-- /.section-header__title -->
+</div><!-- /.section-header -->
+
+</div><!-- /.section__col -->
+</div><!-- /.section__row -->
+</div><!-- /.section__container -->
+</div><!-- /.section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- mainnnnnnnnnnnnnnnnnnnnnnn -->
+
+<div class="section section--md-pad">
+<div class="section__container">
+<div class="section__row">
+
+
+
+
+<div class="main-sidebar col-md-3">
+
+<div class="account-sidebar">
+
+<button class="account-sidebar__menu-btn" data-toggle="collapse" data-target=".account-sidebar__collapse" role="button" aria-haspopup="true" aria-expanded="false">Menu</button>
+
+<div class="account-sidebar__collapse collapse">
+
+
+
+<div class="account-sidebar__nav-group">
+<div class="account-sidebar__nav-group-hdr">
+<div class="account-sidebar__nav-group-title">Conferences</div><!-- /.account-sidebar__nav-group-title -->
+</div><!-- /.account-sidebar__nav-group-hdr -->
+
+<div class="account-sidebar__nav">
+<ul class="account-nav-list">
+	<li class="account-nav-list__item"><a href="user-meetings.html" class="account-nav-list__link">My Conferences</a></li>
+<li class="account-nav-list__item"><a href="user-viewing-history.html" class="account-nav-list__link">Viewing History</a></li>
+	<li class="account-nav-list__item"><a href="user-playlist.html" class="account-nav-list__link">Favorites</a></li>
+	<li class="account-nav-list__item"><a href="user-playlist-directory.html" class="account-nav-list__link">Playlists</a></li>
+	<li class="account-nav-list__item"><a href="user-bookmarks.html" class="account-nav-list__link">Bookmarks and Notes</a></li>	
+</ul><!-- /.account-nav-list -->
+</div><!-- /.account-sidebar__nav -->
+</div><!-- /.account-sidebar__nav-group -->
+
+<div class="account-sidebar__nav-group">
+<div class="account-sidebar__nav-group-hdr">
+<div class="account-sidebar__nav-group-title">AICP-CM</div><!-- /.account-sidebar__nav-group-title -->
+</div><!-- /.account-sidebar__nav-group-hdr -->
+
+<div class="account-sidebar__nav">
+<ul class="account-nav-list">
+	<li class="account-nav-list__item"><a href="user-cme-meetings.html" class="account-nav-list__link">AICP-CM Activities</a></li>
+	<li class="account-nav-list__item"><a href="user-cme-certificates.html" class="account-nav-list__link">Certificates</a></li>
+	<li class="account-nav-list__item"><a href="" class="account-nav-list__link">Transcript</a></li>	
+</ul><!-- /.account-nav-list -->
+</div><!-- /.account-sidebar__nav -->
+</div><!-- /.account-sidebar__nav-group -->
+
+
+
+<div class="account-sidebar__nav-group">
+<div class="account-sidebar__nav-group-hdr">
+<div class="account-sidebar__nav-group-title">Account</div><!-- /.account-sidebar__nav-group-title -->
+</div><!-- /.account-sidebar__nav-group-hdr -->
+
+<div class="account-sidebar__nav">
+<ul class="account-nav-list">
+	<li class="account-nav-list__item"><a href="user-settings.html" class="account-nav-list__link">Account Settings</a></li>
+	<li class="account-nav-list__item"><a href="user-order-history.html" class="account-nav-list__link">Order History</a></li>
+</ul><!-- /.account-nav-list -->
+</div><!-- /.account-sidebar__nav -->
+</div><!-- /.account-sidebar__nav-group -->
+
+
+
+
+</div><!-- /.account-sidebar__collapse -->
+
+</div><!-- /.account-sidebar -->
+
+
+</div><!-- /.main-sidebar -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="main-content col-md-9">
+<div class="account-main">
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="account-main__hdr">
+		<div class="account-main__title">AICP-CM Activities</div><!-- /.account-main__title -->
+		<div class="account-main__subhdr">
+
+		
+		</div><!-- /.account-main__subhdr -->
+		
+	</div><!-- /.account-main__hdr -->
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="account-main__content">
+	
+
+
+
+
+
+
+
+
+
+
+<!-- cccccccccccccccccccccccccccccccccccccccccccc -->
+
+<div class="composite-list">
+
+<div class="composite-list__item">
+
+<div class="composite-list__thumb">
+	<span class="thumb">
+	<img src="img/placeholders/thumb-placeholder-008.jpg" alt="" class="thumb__img">
+
+	<span class="thumb-feat">
+	<span class="thumb-feat-list">
+	<span class="thumb-feat-list__item">AICP-CM</span>
+	</span>
+	</span>
+
+	</span><!-- /.thumb -->
+</div><!-- /.composite-list__thumb -->
+
+<div class="composite-list__details">
+	<span class="composite-list-title"><a href="">2019 ICMA Virtual Annual Conference</a></span>
+	<span class="composite-list-txt composite-list-txt--dark">206 credit hours available</span>
+	<span class="composite-list-txt">Credit available 10/20/17 - 10/20/19</span>
+</div><!-- /.composite-list__details -->
+
+<div class="composite-list__btns">
+<ul class="composite-btn-list">
+	<li class="composite-btn-list__item"><a href="user-cme-sessions.html" class="hbtn hbtn--block hbtn--small hbtn--primary hbtn--rounded">AICP-CM Sessions</a></li>
+</ul>
+</div><!-- /.composite-list__btns -->
+
+</div><!-- /.composite-list__item -->
+
+
+
+
+
+
+
+
+
+<div class="composite-list__item">
+
+<div class="composite-list__thumb">
+	<span class="thumb">
+	<img src="img/placeholders/thumb-placeholder-024.jpg" alt="" class="thumb__img">
+
+	<span class="thumb-feat">
+	<span class="thumb-feat-list">
+	<span class="thumb-feat-list__item">AICP-CM</span>
+	</span>
+	</span>
+
+	</span><!-- /.thumb -->
+</div><!-- /.composite-list__thumb -->
+
+<div class="composite-list__details">
+	<span class="composite-list-title"><a href="">2018 ICMA Virtual Annual Conference</a></span>
+	<span class="composite-list-txt composite-list-txt--dark">68 credit hours available</span>
+	<span class="composite-list-txt">Credit available 9/4/16 - 9/4/18</span>
+</div><!-- /.composite-list__details -->
+
+<div class="composite-list__btns">
+<ul class="composite-btn-list">
+	<li class="composite-btn-list__item"><a href="user-cme-sessions.html" class="hbtn hbtn--block hbtn--small hbtn--primary hbtn--rounded">AICP-CM Sessions</a></li>
+</ul>
+</div><!-- /.composite-list__btns -->
+
+</div><!-- /.composite-list__item -->
+
+
+
+
+
+
+<div class="composite-list__item">
+
+<div class="composite-list__thumb">
+	<span class="thumb">
+	<img src="img/placeholders/thumb-placeholder-003.jpg" alt="" class="thumb__img">
+
+	<span class="thumb-feat">
+	<span class="thumb-feat-list">
+	<span class="thumb-feat-list__item">AICP-CM</span>
+	</span>
+	</span>
+
+	</span><!-- /.thumb -->
+</div><!-- /.composite-list__thumb -->
+
+<div class="composite-list__details">
+	<span class="composite-list-title"><a href="">2017 ICMA Annual Conference</a></span>
+	<span class="composite-list-txt composite-list-txt--dark">88 credit hours available</span>
+	<span class="composite-list-txt">Credit available 8/11/15 - 8/20/17</span>
+</div><!-- /.composite-list__details -->
+
+<div class="composite-list__btns">
+<ul class="composite-btn-list">
+	<li class="composite-btn-list__item"><a href="user-cme-sessions.html" class="hbtn hbtn--block hbtn--small hbtn--primary hbtn--rounded">AICP-CM Sessions</a></li>
+</ul>
+</div><!-- /.composite-list__btns -->
+
+</div><!-- /.composite-list__item -->
+
+
+
+</div><!-- /.composite-list -->
+
+<!-- cccccccccccccccccccccccccccccccccccccccccccccccccccccc -->
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!-- /.account-main__content -->
+	
+	
+	
+</div><!-- /.account-main -->
+
+
+
+
+
+
+
+
+
+
+
+</div><!-- /.main-content -->	
+
+
+</div><!-- /.section__row -->
+</div><!-- /.section__container -->
+</div><!-- /.section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main><!-- /.site-main -->
+
+
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+
+
+<footer class="cc-footer" role="contentinfo">
+	
+<div class="cc-footer__content">
+
+<div class="cc-footer__container">
+
+<div class="cc-footer__row">
+<div class="cc-footer__col cc-footer__col--address">
+
+
+
+
+	
+<img src="img/footer/site-footer-logo.svg" class="cc-footer__logo" alt="ICMA">
+<p class="cc-footer__biline">American Railway Engineering and <br>Maintenance-of-Way Association</p>
+<p class="cc-footer__tagline">Advancing an industry, innovating a future.</p>
+<p class="cc-footer__address">4501 Forbes Blvd., Suite 130<br>Lanham, Maryland 20706<br>T: +1.301.459.3200<br>E: <a href="mailto:info@ICMA.org">info@ICMA.org</a></p>
+</div><!-- /.cc-footer__col -->
+	
+	
+<div class="cc-footer__col cc-footer__col--links">
+	
+<div class="cc-footer-links">
+	
+<ul class="cc-footer-link-list">
+<li class="cc-footer-link-list__item"><a href="">ICMA.org</a></li>
+<li class="cc-footer-link-list__item"><a href="">careers.ICMA.org</a></li>
+<li class="cc-footer-link-list__item"><a href="">AREMAfoundation.org</a></li>
+</ul><!-- /.cc-footer-link-list -->
+
+
+<ul class="cc-footer-social-list">
+	<li class="cc-footer-social-list__item">
+		<a href="https://www.facebook.com/AREMArail/" class="cc-footer-social-list__link cc-footer-social-list__link--facebook" target="_blank">Facebook</a>
+	</li><!-- /.cc-footer-social-list__item -->
+	<li class="cc-footer-social-list__item">
+		<a href="https://www.linkedin.com/company/american-railway-engineering-and-maintenance-of-way-association-ICMA-?trk=company_logo" class="cc-footer-social-list__link cc-footer-social-list__link--linkedin" target="_blank">LinkedIn</a>
+	</li><!-- /.cc-footer-social-list__item -->
+	<li class="cc-footer-social-list__item">
+		<a href="https://twitter.com/AREMArail" class="cc-footer-social-list__link cc-footer-social-list__link--twitter" target="_blank">Twitter</a>
+	</li><!-- /.cc-footer-social-list__item -->
+</ul><!-- /.cc-footer-social-list -->
+	
+
+</div><!-- /.cc-footer-links -->
+
+</div><!-- /.cc-footer__col -->	
+	
+
+</div><!-- /.cc-footer__row -->
+
+</div><!-- /.cc-footer__container -->	
+	
+</div><!-- /.cc-footer__content -->	
+	
+
+<div class="cc-footer__copyright">
+<div class="container" role="navigation">
+<p>Copyright &copy; 2018 ICMA &nbsp;|&nbsp; <a href="http://conference.ICMA.org/AREMA_Conf/Terms_of_Use">Terms of Use</a></p>
+</div><!-- /.cc-footer__container -->
+</div><!-- /.cc-footer__copyright -->		
+	
+
+
+</footer><!-- /.cc-footer -->
+
+
+
+
+
+
+
+</div><!-- /.page -->
+
+
+
+
+<script src="js/plugins.js"></script>
+
+
+<script src="js/scripts.js"></script>
+<script src="js/local-scripts.js"></script>
+
+
+
+
+</body>
+</html>

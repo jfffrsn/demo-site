@@ -1,0 +1,28 @@
+// -----------------------------------------------------------------------------
+// This file contains the skip nav link for screen readers
+// -----------------------------------------------------------------------------
+
+//skipnav
+#skip{   }
+
+#skip a {
+    padding:10px 10px;
+    position: absolute;
+    top:-40px;
+    left:0px;
+    color: white;
+    border-right:1px solid white;
+    border-bottom:1px solid white;
+    background:#161616;
+    z-index: 100;
+    text-decoration: none;
+
+    &:focus {
+        position:absolute;
+        left:0px;
+        top:0px;
+        background:#444;
+        outline:0;  
+
+    }
+}

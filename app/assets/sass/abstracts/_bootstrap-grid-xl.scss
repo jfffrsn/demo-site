@@ -1,0 +1,45 @@
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-xl:                  1372px !default;
+$screen-xl-min:              $screen-xl !default;
+
+// x-Large screen / wide desktop
+$container-xl-desktop:      (1300px + $grid-gutter-width) !default;
+//** For `$screen-lg-min` and up.
+$container-xl:                 $container-xl-desktop !default;
+
+
+
+
+// Grid system
+// --------------------------------------------------
+
+
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+
+.container {
+  @include container-fixed;
+
+
+  @media (min-width: $screen-xl-min) {
+    width: $container-xl;
+  }
+
+}
+
+
+
+
+
+
+
+
+// Large grid
+//
+// Columns, offsets, pushes, and pulls for the large desktop device range.
+
+@media (min-width: $screen-xl-min) {
+  @include make-grid(xl);
+}

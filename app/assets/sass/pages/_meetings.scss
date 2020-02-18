@@ -1,0 +1,162 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the meetings page.
+// -----------------------------------------------------------------------------
+
+
+.meetings-directory{
+    //background-color: lime;
+    //padding: 20px;
+
+
+    //&__row{ @extend .row; }
+    &__col{ @extend .col-sm-12; }
+}
+
+//
+.meetings-directory-list{
+    //background-color: blue;
+    //padding: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    //justify-content: center;
+
+    &__item{ 
+        background-color: #fff;
+    position: relative;
+    padding: 3*$padding-base;
+
+
+    display: block;
+    margin: 2*$padding-base; //half of below
+    flex: 1 1 calc(100%);
+    max-width: calc(100%);
+
+        @media (min-width: $screen-sm-min) {
+            flex: 1 1 calc(33.3333333333% - 4*#{$padding-base});
+            max-width: calc(33.3333333333% - 4*#{$padding-base});
+        }
+        @media (min-width: $screen-md-min) {
+        
+        }
+        @media (min-width: $screen-lg-min) {
+            flex: 1 1 calc(25% - 4*#{$padding-base});
+            max-width: calc(25% - 4*#{$padding-base});
+        }
+
+    }
+
+    &__block{
+       // padding: 40px;
+    }
+
+    &__thumb{
+        //background-color: orchid;
+        //padding: 2px;  
+    }
+
+    &__details{
+        padding: 2*$padding-base 0 2*$padding-base 0;
+        min-height: 80px;
+
+
+        &--has-ftr{
+            //padding-bottom: 6*$padding-base;
+        }
+    }
+
+    &__title{
+    display: block;
+    text-transform: uppercase;
+     margin-bottom:  $padding-base;
+     font-size: 1.4rem;
+     //line-height: 1.3;
+     font-weight: 500;
+     //font-family: $headings-font-family;
+     //letter-spacing: -0.1px;
+     color: $text-headings-color;
+    }
+    &__date{
+        //background-color: green;
+        //padding: 2px;
+        text-transform: uppercase;
+        color: #757575;
+        font-size: 1.2rem;
+        padding: $padding-base/4 0;
+    }
+    &__location{
+        //background-color: yellow;
+        //padding: 2px;
+        text-transform: uppercase;
+        color: #757575;
+        font-size: 1.2rem;
+        padding: 0;
+    }
+
+
+    &__ftr{
+        //background-color: pink;
+       // position: absolute;
+       // bottom: 20px;
+        //width: calc(100% - 40px);
+    }
+}
+
+
+//
+
+.meetings-purchase-list{
+    //background-color: #f5f5f5;
+    display: flex;
+    //align-items: center;
+    flex-direction: column;
+    margin-top: 2.5*$padding-base;
+
+    
+    &__txt-block{
+        
+
+    }
+
+    &__txt{
+        //flex: 1;
+        //text-align: right;
+        color: $brand-secondary;
+        margin-right: 2*$padding-base;
+        font-weight: 400;
+        font-size: 1.3rem;
+        display: block;
+
+        &--purchased{
+            font-weight: 500;
+            color: #4caf50;
+        }
+    }
+
+    &__btn{
+        //margin-left: auto;
+        margin: 2rem 0;
+    }
+}
+
+
+
+//
+.meetings-meta-info{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    &__item{
+        font-size: 1.2rem;
+        border-right: #ddd 1px solid;
+            margin: 0 $padding-base 0 0;
+    padding: 0 $padding-base 0 0;
+
+        &:last-of-type{
+            border-right: 0;
+            margin: 0;
+            padding: 0
+        }
+    }
+}

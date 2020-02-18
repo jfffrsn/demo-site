@@ -1,0 +1,74 @@
+//starabllity
+// https://github.com/LunarLogic/starability
+
+$star-width: 40px;
+
+.global-rating-stars-group{
+    display: flex;
+    align-items: center;
+}
+.global-rating-stars-clear{
+    margin-top: $padding-base/1.5;
+    margin-left: $padding-base;
+}
+
+
+.global-rating-stars {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  border: none;
+  background-color: transparent;
+  height: $star-width;
+  width: 5*$star-width;
+
+  > {
+    input { position: absolute; margin-right: -100%; opacity: 0;
+      &:checked ~ label, &:focus ~ label { background-position: 0 0; }
+      &:checked + label, &:focus + label { background-position: 0 (-$star-width); }
+      &:hover {
+        ~ label { background-position: 0 0; }
+        + label { background-position: 0 (-$star-width); &::before { opacity: 1; } }
+      }
+    }
+
+    label {
+        margin: 0; //bs override
+        position: relative;
+        display: inline-block;
+        float: left;
+        width: $star-width;
+        height: $star-width;
+        font-size: 0.1em;
+        color: transparent;
+        cursor: pointer;
+        background-image: url("../img/ratings/ratings-star-sprite.svg");
+        background-repeat: no-repeat;
+        background-position: 0 (-$star-width);
+
+              &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                height: $star-width;
+                background-image: url("../img/ratings/ratings-star-sprite.svg");
+                background-position: 0 $star-width;
+                pointer-events: none;
+                opacity: 0;
+              }
+
+              &:nth-of-type(5)::before { width: 4*$star-width; left: (-4*$star-width); }
+              &:nth-of-type(4)::before { width: 3*$star-width; left: (-3*$star-width); }
+              &:nth-of-type(3)::before { width: 2*$star-width; left: (-2*$star-width); }
+              &:nth-of-type(2)::before { width: $star-width; left: (-$star-width); }
+              &:nth-of-type(1)::before { width: 0px; left: 0px; }
+    }
+  }
+}
+
+
+//make stars gray if nothing checked
+.global-rating-stars>label {background-position: 0 0} 
+.global-rating-stars>input:checked+label:before { opacity: 1 }

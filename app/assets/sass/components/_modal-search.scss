@@ -1,0 +1,114 @@
+
+//fix sir header being over modal backdrop
+.modal-open .modal {
+  z-index: 99999;
+}
+
+.modal-backdrop {
+  z-index: 9999;
+}
+
+//
+
+.modal-selected-facets{
+}
+.modal-selected-facets-list{
+    font-size: 1.4rem;
+    list-style: none;
+    margin: 0  0 2*$padding-base 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item{
+        margin: $padding-base/2 $padding-base $padding-base/2 0;
+        padding: $padding-base/2 $padding-base;
+        background-color: #fff;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        line-height: 1.5;
+        border: #dcdcdc 1px solid;
+        
+        &--query{
+            background-color: transparent;
+            border: none;
+            width: 100%;
+            margin-bottom: $padding-base/2;
+        } // search term
+
+        &--conference, &--level-01 {
+            //background-color: lime;
+            border-color: #a5c4f7;
+            background-color: #e7f0fc;
+        } //level 1
+
+       &--track, &--level-02 {
+           // background-color: orange;
+            border-color: #99c651;
+            background-color: #f2f9e9;
+        } // level 2
+        
+       &--session, &--level-03 {
+           // background-color: orchid;
+            border-color: #dd6332;
+            background-color: #fff4f2;
+        } // level 3
+
+    }
+
+    &__category{
+        //background-color: pink;
+        margin-right: $padding-base/2;
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        &::after{
+            content: ":"
+        }
+    }
+
+    &__name {
+        //background-color: peru;
+        max-width: 300px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+
+    &__remove{
+        //background-color: aliceblue;
+        margin-left: $padding-base;
+        display: block;
+    }
+
+    &__remove-icon{
+        //background-color: rgba(0,0,0,.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 16px;
+        height: 16px;
+        //border-radius: 50%;
+
+        > svg{
+            width: 100%;
+            height: auto;
+            fill: rgba(0,0,0,.9);
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

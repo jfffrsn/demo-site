@@ -1,0 +1,85 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the account pages.
+// Sidebar section
+// -----------------------------------------------------------------------------
+
+
+.account-sidebar{
+    //background-color: lime;
+    padding: 0;
+
+    &__menu-btn{
+        display: block;
+        width: 100%;
+        border: 0;
+        background-color: #f5f5f5;
+        text-transform: uppercase;
+        margin-bottom: 3*$padding-base;
+        padding: $padding-base;
+
+        @include on-event {
+        color: $text-color;
+        background-color: mix(#fff, $brand-primary, 94%);
+        text-decoration: none;
+        }
+
+        @media (min-width: $screen-md-min) { 
+            display: none;
+        }
+    }
+
+    &__collapse{
+
+        @media (min-width: $screen-md-min) { 
+        display: block;
+        height: auto!important;
+        }
+    }
+
+    &__nav-group{
+        //background-color: beige;
+        padding: 0;
+        margin-bottom: 4*$padding-base;
+    }
+    &__nav-group-hdr{
+        //background-color: whitesmoke;
+        padding: 0;
+        margin-bottom: $padding-base;
+        border-bottom: $gray1 1px solid;
+    }
+    &__nav-group-title{
+        color: rgba(0,0,0,1);
+        padding: $padding-base;
+        margin: 0;
+        font-size: 1.3rem;
+        font-family: $font-family-sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    &__nav{
+        //background-color: orange;
+        padding: 0;
+    }
+
+}
+
+.account-nav-list{
+    list-style: none;
+    margin:0;
+    padding: 0;
+
+    &__item{}
+    &__link{
+        display: block;
+        color: $text-color;
+        padding: $padding-base;
+
+            @include on-event {
+            color: #000;
+            background-color: mix($brand-primary, #fff, 10%);
+            text-decoration: none;
+            }
+    }
+
+}

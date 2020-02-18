@@ -1,0 +1,109 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the contact page.
+// -----------------------------------------------------------------------------
+
+
+.contact-main{
+    @include clearfix;
+
+
+    &__row{ @extend .row; }
+    &__col{ @extend .col-sm-12; 
+
+        &--form{ @extend .col-md-9; }
+        &--aside{ @extend .col-md-3; }
+    }
+}
+
+
+
+//
+.contact-form{
+ padding: 0 0 3rem 0;
+
+
+ @media (min-width: $screen-sm-min) {  }
+    @media (min-width: $screen-md-min) { padding: 0 10rem 0 0; }
+    @media (min-width: $screen-lg-min) {  }
+
+  &__hdr{
+    padding: 0;
+    margin: 0 0 5*$padding-base 0;
+   }
+   &__title{
+    margin: 0;
+    padding: 0;
+    font-size: 2.4rem;
+    line-height: 1.4;
+    font-weight: 700;
+     font-family: $font-family-sans-serif;
+     letter-spacing: 0; 
+      color: $text-headings-color;
+   }
+    
+
+    &__form{
+        padding: 0;
+        margin: 0;
+    }
+    &__form-group{
+        @extend .form-group;
+       // background-color: blue;
+        padding: 0;
+        display: block;
+        margin: 0 0 3*$padding-base 0;
+    }
+    &__label{
+        padding: 0;
+        margin: 0 0 $padding-base 0;
+        //background-color: orchid;
+        display: block;
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: #212121;
+    }
+
+
+    &__form-control{
+        //@extend .form-control;
+        background-color: #fff;
+        padding: 1.5*$padding-base;
+        width: 100%;
+          border: 1px solid #ccc;
+
+         &:focus{
+            border-color: $brand-primary;
+            box-shadow: none;
+            outline: 0;
+        }
+    }
+}
+
+
+//
+.contact-aside{
+   //background-color: orange;
+   //padding: 20px;
+
+   &__hdr{
+    //background-color: plum;
+    padding: 0;
+    margin: 0 0 3*$padding-base 0;
+   }
+   &__title{
+    //background-color: beige;
+    margin: 0;
+    padding: 0;
+         font-weight: 700;
+     font-family: $font-family-sans-serif;
+     letter-spacing: 0;  
+     font-size: 2rem; 
+     color: $text-headings-color; 
+   }
+    
+
+   &__content{
+     margin: 0 0 0 0;
+    padding: 0;
+   } 
+}

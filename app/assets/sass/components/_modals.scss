@@ -1,0 +1,128 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the 'moadl' component
+// -----------------------------------------------------------------------------
+
+//change how modal opens
+.modal.fade {
+  .modal-dialog {
+    transform: scale(0.1);
+    top: 300px;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  &.in .modal-dialog {
+    transform: scale(1);
+    transform: translate3d(0, -300px, 0);
+    opacity: 1;
+  }
+}
+
+
+////////////////////
+
+
+
+$cmodal-border-radius: 5px;
+
+
+.cmodal{
+        position: relative;
+        background-color: #fff;
+        border: 0;
+        border-radius: $cmodal-border-radius;
+        background-clip: padding-box;
+        outline: 0;
+    
+    
+    &__hdr{
+        //background-color: pink;
+        display: flex;
+        align-items: center;
+        padding: 3*$padding-base 3*$padding-base;
+        border-radius: $cmodal-border-radius $cmodal-border-radius 0 0;
+
+        &--flat{
+            padding-bottom: $padding-base/2;
+        }
+    }
+    &__title{
+        //background-color: lime;
+        margin: 0;
+        padding:0;
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: $brand-primary;
+        font-family: $font-family-sans-serif;
+        line-height: 1.4;
+    }
+
+    &__close{
+        //background-color: beige;
+        margin-left: auto;
+    }
+
+   &__content{
+        //background-color: rgba(200,20,9,.3);
+        padding: 3*$padding-base;
+   }
+
+
+    &__ftr{
+      @extend .modal-footer;
+    }
+
+}
+
+//close buttons
+.cmodal-close-btn{
+  border: 0;
+  display: flex;
+  background-color: transparent;
+  /* padding: 8px; */
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  outline: 0;
+
+    > svg{
+    fill: $brand-primary;
+    }
+
+    @include on-event {
+    color: red;
+    background-color: $brand-primary;
+    text-decoration: none;
+        > svg{
+        fill: #fff;
+        }
+    }
+}
+
+
+//
+.cmodal-close-btn-flat{
+  border: 0;
+  display: flex;
+  background-color: transparent;
+  /* padding: 8px; */
+  text-align: center;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  outline: 0;
+
+    > svg{
+    fill: #212121;
+    }
+
+    @include on-event {
+    text-decoration: none;
+        > svg{
+        fill: $brand-primary;
+        }
+    }
+}

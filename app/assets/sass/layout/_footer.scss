@@ -1,0 +1,144 @@
+// -----------------------------------------------------------------------------
+// This file contains the site footer styles.
+// -----------------------------------------------------------------------------
+
+.cc-footer {
+  color: $footer-color;
+  background-color: $footer-bg;
+  position: relative;
+
+  a {
+    color: $footer-link-color;
+    padding: 0;
+    border-bottom: 1px solid $footer-link-color;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $footer-link-color-hover;
+      border-bottom: 1px solid $footer-link-color-hover;
+      text-decoration: none;
+    }
+  }
+
+  &__container {
+    @extend .container;
+  }
+  &__row {
+    @extend .row;
+  }
+
+  &__col {
+    &--address {
+      @extend .col-sm-8;
+    }
+    &--links {
+      @extend .col-sm-4;
+    }
+  }
+  //
+  &__content {
+    background-color: transparent;
+    padding: 8rem;
+    overflow: hidden; //stops scrollbar on resize issue
+  }
+
+  &__logo {
+    max-width: 200px;
+  }
+  &__biline {
+    font-size: 1.44rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 1.36rem 0 0.2rem 0;
+  }
+  &__tagline {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.6;
+    margin: 1.36rem 0 0.2rem 0;
+    padding: 0;
+  }
+
+  &__address {
+    font-size: 1.44rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 1.36rem 0 0.2rem 0;
+  }
+
+  //
+  &__copyright {
+    background-color: transparent;
+    padding-bottom: 3.2rem;
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+}
+
+//lists
+
+.cc-footer-links {
+  padding: 3.7rem 0;
+}
+
+.cc-footer-link-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+
+  &__item {
+    margin: 1.7rem 0;
+  }
+}
+
+//
+
+.cc-footer-social-list {
+  list-style: none;
+  margin: 4.3rem 0 0 0.7rem;
+  padding: 0;
+  font-size: 1.6rem;
+
+  a {
+    border: none;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      border: none;
+      text-decoration: none;
+    }
+  }
+
+  &__item {
+    margin: 0;
+    //background-color: blue;
+    display: inline-flex;
+    margin: 0 1.8rem 1.8rem 0;
+    width: 50px;
+    height: 50px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &__link {
+    display: block;
+    width: 100%;
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    &--facebook {
+      background-image: url(../img/footer/icon-facebook.svg);
+    }
+    &--twitter {
+      background-image: url(../img/footer/icon-twitter.svg);
+    }
+    &--linkedin {
+      background-image: url(../img/footer/icon-linkedin.svg);
+    }
+  }
+}

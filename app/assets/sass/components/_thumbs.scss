@@ -1,0 +1,129 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the thumb component.
+// -----------------------------------------------------------------------------
+
+.thumb {
+  position: relative;
+  padding: 0;
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      opacity: 0.5;
+      transform: scale(1.1);
+      backface-visibility: hidden;
+    }
+  }
+}
+
+//duration
+.thumb-duration {
+  background-color: #000;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 1.1rem;
+  padding: 4px;
+  opacity: 0.8;
+}
+
+//features
+.thumb-feat {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: auto;
+  z-index: 4;
+  pointer-events: none;
+}
+.thumb-feat-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+
+  &__item {
+    margin-right: 4px;
+    background: #e44484;
+    border-radius: 3px;
+    color: #fff;
+    font-family: $headings-font-family;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1.2;
+    padding: 4px 6px;
+    text-transform: uppercase;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+//resume playback
+.thumb-playback-progress,
+.thumb-playback-background,
+.thumb-playback-progress-bar {
+  bottom: 0;
+  height: 4px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.thumb-playback-background {
+  background-color: #eee;
+  opacity: 0.6;
+}
+
+.thumb-playback-progress-bar {
+  background: #12e5ff;
+  opacity: 1;
+}
+
+//playlist sidebar
+
+.thumb-sidebar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 43.75%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.thumb-sidebar-content {
+  height: 100%;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  opacity: 0.8;
+}
+
+.thumb-sidebar-video-count {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  b {
+    display: block;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

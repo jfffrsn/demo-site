@@ -1,0 +1,89 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the component 'download' menu. 
+// -----------------------------------------------------------------------------
+
+
+.menu-download{
+    background-color: #fff;
+    border: #eee 1px solid;
+    padding: 2*$padding-base;
+
+    &--modal{
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    }
+
+    &__content{
+    //background-color: lime;
+    //border: red 1px solid;
+    }
+
+    &__hdr{
+        //background-color: yellow;
+        //padding: 10px;
+        margin-bottom: 2*$padding-base;
+    }
+    
+    &__title{
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-family: $headings-font-family;
+        letter-spacing: -0.1px;
+    }
+
+}
+
+.menu-download-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    //background-color: yellow;
+    padding: 0;
+    
+
+    &__item{
+        //background-color: gainsboro;
+        width: 100%;
+        border-bottom: $gray1 1px solid;
+
+        &:last-of-type{
+            border-bottom: 0;
+        }
+    }
+
+    &__link{
+        //background-color: Cornsilk;
+        display: flex;
+        align-items: center;
+        padding: 1.5*$padding-base;
+        color: $text-color;
+        transition: all .25s ease-in-out;
+
+        @include on-event {
+        color: $text-color;
+        background-color: mix(#fff, $brand-primary, 94%);
+        text-decoration: none;
+        }
+    }
+
+    &__icon{
+        //background-color: maroon;
+        margin-right: 1.5*$padding-base;
+    }
+
+    &__title{
+        //background-color: red;
+        flex: 1;
+        margin-right: 2*$padding-base;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    &__size{
+        //background-color: green;
+        margin-left: auto;
+    }
+
+}

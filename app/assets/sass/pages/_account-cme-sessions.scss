@@ -1,0 +1,93 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the account cme sessions page.
+// -----------------------------------------------------------------------------
+
+
+
+.user-cme-sessions {
+
+    &__hdr{ 
+    background-color: #eee;
+    padding: 3*$padding-base;
+    display: flex;
+    align-items: center;
+    margin: 0 0 2*$padding-base 0;
+
+    }
+
+    &__details{
+        //background-color: yellow;
+        padding: $padding-base;
+        flex: 1;
+    }
+
+    &__title{
+        display: block;
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin: 0 0 $padding-base 0;
+        color: #212121;
+    }
+
+    &__date{
+        display: block;
+        margin: 0 0 $padding-base 0;
+    }
+    &__type{
+        display: block;
+    }
+
+    &__thumb{
+        max-width: 200px;
+        margin-left: auto;
+    }
+
+
+    &__content{
+    //background-color: pink;
+    //padding: 20px;
+    }
+
+}
+
+
+
+
+.user-cme-sessions-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &__item{ 
+    display: flex;
+        margin: 0;
+        padding: 3*$padding-base 2*$padding-base;
+        border-bottom: $gray1 1px solid;
+    }
+
+    &__title{
+        //background-color: lime;
+        flex: 1;
+
+        &--hdr{
+            font-weight: 500;
+            color: #212121;
+        }
+    }
+    &__credits{
+        //background-color: blue;
+        width: 10%;
+        margin-left: 2*$padding-base;
+        text-align: right;
+        
+    }
+    &__status{
+        //background-color: red;
+        width: 10%;
+        margin-left: 2*$padding-base;
+        text-align: right;
+        
+    }    
+
+}
+

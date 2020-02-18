@@ -1,0 +1,124 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the order history page.
+// -----------------------------------------------------------------------------
+
+
+.order-history{
+    padding: 0;
+    margin: 0;
+
+    &__item{ 
+        border:#ddd 1px solid;
+        padding: 0;
+        margin-bottom: 4*$padding-base;
+
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+    }
+
+    &__hdr{
+        background-color: #fafafa;
+        padding: 2*$padding-base;
+        border-bottom: #ddd 1px solid;
+        text-transform: uppercase;
+    }
+
+    &__content{
+        //background-color: #fafafa;
+        padding: 3*$padding-base;
+    }
+
+}
+
+
+
+//
+.order-history-hdr-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    &__item{
+        display: flex;
+        width: 100%;
+    }
+
+    &__id{
+        //background-color: plum;
+        margin-right: 2*$padding-base;
+        font-weight: 500;
+        border-right: #bdbdbd 1px solid;
+        padding: 0 2*$padding-base 0 0;
+    }
+
+    &__date{
+        //background-color: aliceblue;
+        flex: 1;
+
+    }
+    &__total{
+        //background-color: steelblue;
+        margin-left: 2*$padding-base;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+.order-history-product-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    //background-color: gray;
+
+    &__item{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 3*$padding-base;
+
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+    }
+
+    &__thumb{
+        max-width: 100px;
+        margin-right: 2*$padding-base;
+
+    }
+    &__details{
+        flex: 1;
+    }
+
+    &__title{
+        display: block;
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin: 0;
+        color: $text-headings-color;
+    
+    }
+
+    &__desc{
+        display: block;
+    }
+
+    &__btn{
+        margin-left: 2*$padding-base;
+
+    }
+
+}

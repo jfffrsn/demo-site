@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Page Title - CompanyName</title>
+
+    <link href="css/plugins.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/master.css" rel="stylesheet" type="text/css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/icons/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/icons/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link rel="manifest" href="img/icons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="img/icons/safari-pinned-tab.svg"
+      color="#13365c"
+    />
+    <link rel="shortcut icon" href="img/icons/favicon.ico" />
+    <meta name="msapplication-config" content="img/icons/browserconfig.xml" />
+    <meta name="msapplication-TileColor" content="#13365c" />
+    <meta name="theme-color" content="#13365c" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <a id="top" class="element-invisible"></a
+    ><!-- back to top anchor -->
+    <div id="skip"><a href="#maincontent">Skip Navigation</a></div>
+    <!-- skip nav -->
+
+    <!-- page just wraps the header, main and footer -->
+    <div class="page">
+      <!-- HEADER -->
+      <header role="banner" class="site-header">
+        <div class="site-header__container">
+          <div class="site-header__row">
+            <div class="site-header__col">
+              <div class="topbar">
+                <div class="topbar__container">
+                  <div class="topbar__row">
+                    <div class="topbar__col">
+                      <div class="topbar-nav">
+                        <ul class="topbar-nav-list">
+                          <li class="topbar-nav-list__item hidden-sm">
+                            <a href="" class="topbar-nav-list__link"
+                              ><span class="topbar-nav-list__txt"
+                                >Sign Out</span
+                              ></a
+                            >
+                          </li>
+                          <!-- /.topbar-nav-list__item -->
+                          <li class="topbar-nav-list__item">
+                            <a href="" class="topbar-nav-list__link"
+                              ><span class="topbar-nav-list__txt"
+                                >Contact Us</span
+                              ></a
+                            >
+                          </li>
+                          <!-- /.topbar-nav-list__item -->
+                          <li class="topbar-nav-list__item">
+                            <a href="" class="topbar-nav-list__link">
+                              <span class="topbar-cart-indicator">
+                                <span class="topbar-cart-icon"></span>
+                                <span class="topbar-cart-count">1</span>
+                              </span>
+                              <span class="topbar-nav-list__txt">Cart</span></a
+                            >
+                          </li>
+                          
+                          <!-- /.topbar-nav-list__item -->
+                          <li class="topbar-nav-list__item">
+                            <a href="" class="topbar-nav-list__link"
+                              ><span class="topbar-nav-list__txt"
+                                ></span
+                              ></a
+                            >
+                          </li>
+                          <!-- /.topbar-nav-list__item -->
+                        </ul>
+                        <!-- /.topbar-nav-list -->
+                      </div>
+                      <!-- /.topbar-nav -->
+
+                      <div class="topbar-search">
+                        <div class="topbar-search__form">
+                          <label for="#search" class="topbar-search__label"
+                            >Keyword Search</label
+                          >
+                          <input
+                            type="search"
+                            class="topbar-search__field"
+                            placeholder="Keyword Search"
+                          />
+                          <input type="submit" class="topbar-search__btn" />
+                        </div>
+                        <!-- /.topbar-search__form -->
+                      </div>
+                      <!-- /.topbar-search -->
+
+                      <div class="topbar-toggles">
+                        <!-- searchicon -->
+                        <button
+                          class=""
+                          aria-label="Toggle search"
+                          role="button"
+                          tabindex="0"
+                          aria-expanded="false"
+                          id="nav-search"
+                          data-toggle="collapse"
+                          data-target="#mobileSearch"
+                        >
+                          <span class="header-nav-btn__icon">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 23 24"
+                            >
+                              <path
+                                fill="#fff"
+                                d="M2.9 2.4C-.7 5.7-1 11.5 2.4 15.2c2.8 3.1 7.4 3.8 11 1.9l6.5 7 3.1-3-6.4-6.8c2.3-3.4 2-8-.8-11.2C12.4-.8 6.6-1 2.9 2.4zM5.4 5c2.2-2 5.6-1.9 7.6.3s1.9 5.6-.3 7.6-5.6 2-7.7-.3-1.8-5.5.4-7.6z"
+                              />
+                            </svg>
+                          </span>
+                          <span class="sr-only">Search</span>
+                        </button>
+                        <!-- searchicon -->
+
+                        <!-- navicon -->
+                        <button
+                          aria-label="Toggle navigation"
+                          role="button"
+                          tabindex="0"
+                          aria-expanded="false"
+                          class=""
+                          id="nav-icon"
+                          data-toggle="collapse"
+                          data-target="#mobileNav"
+                        >
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </button>
+                        <!-- navicon -->
+                      </div>
+                      <!-- /.topbar-toggles -->
+                    </div>
+                    <!-- /.topbar__col -->
+                  </div>
+                  <!-- /.topbar__row -->
+                </div>
+                <!-- /.topbar__container -->
+              </div>
+              <!-- /.topbar -->
+
+              <div class="topnavbar">
+                <div class="topnavbar__container">
+                  <div class="topnavbar__row">
+                    <div class="topnavbar__col">
+                      <div class="header-logo">
+                        <img
+                          src="img/header/site-logo.svg"
+                          class="header-logo__img"
+                          alt="Virtual ICMA"
+                        />
+                      </div>
+                      <!-- /.header-logo -->                     <div class="header-nav" role="navigation">
+                        <ul class="header-nav-list">
+                          <li class="header-nav-list__item">
+                            <a href="index.html" class="header-nav-list__link">Home</a>
+                          </li>
+                          <!-- /.header-nav-list__item -->
+
+                          
+
+                          <li class="header-nav-list__item">
+                            <a href="" class="header-nav-list__link">About</a>
+                          </li>
+                          <!-- /.header-nav-list__item -->
+                          <li class="header-nav-list__item">
+                            <a href="search.html" class="header-nav-list__link">Watch</a>
+                          </li>
+                          <!-- /.header-nav-list__item -->
+                          <li class="header-nav-list__item">
+                            <a href="meetings.html" class="header-nav-list__link"
+                              >Conferences</a
+                            >
+                          </li>
+                          <!-- /.header-nav-list__item -->
+                          <li class="header-nav-list__item">
+                            <a href="user-meetings.html" class="header-nav-list__link"
+                              >Exhibitors & Sponsors</a
+                            >
+                          </li>
+                          <!-- /.header-nav-list__item -->
+                          <li class="header-nav-list__item">
+                            <a href="" class="header-nav-list__link"
+                              >ICMA</a
+                            >
+                          </li>
+                          <!-- /.header-nav-list__item -->
+                        </ul>
+                        <!-- /.header-nav-list -->
+                      </div>
+                      <!-- /.header-nav -->
+                    </div>
+                    <!-- /.topnavbar__col -->
+                  </div>
+                  <!-- /.topnavbar__row -->
+                </div>
+                <!-- /.topnavbar__container -->
+              </div>
+              <!-- /.topnavbar -->
+            </div>
+            <!-- /.site-header__col -->
+          </div>
+          <!-- /.site-header__row -->
+        </div>
+        <!-- /.site-header__container -->
+
+        <div id="mobileSearch" class="collapse">
+          <div class="header-nav-search">
+            <form action="" class="header-nav-search-form">
+              <div class="header-nav-search-form__form-group">
+                <div
+                  class="header-nav-search-form__form-control header-nav-search-form__form-control--label"
+                >
+                  <label class="header-nav-search-form__label" for="search"
+                    >Search</label
+                  >
+                </div>
+                <!-- /.header-nav-search-form__control -->
+
+                <div
+                  class="header-nav-search-form__form-control header-nav-search-form__form-control--field"
+                >
+                  <input
+                    type="text"
+                    placeholder="Search..."
+                    id="search"
+                    value=""
+                    class="header-nav-search-form__input"
+                  />
+                </div>
+                <!-- /.header-nav-search-form__control -->
+
+                <div
+                  class="header-nav-search-form__form-control header-nav-search-form__form-control--btn"
+                >
+                  <input
+                    type="button"
+                    class="header-nav-search-form__btn"
+                    value="Search"
+                    onclick="window.location.href='search.html';"
+                  />
+                </div>
+                <!-- /.header-nav-search-form__control -->
+              </div>
+              <!-- /.header-nav-search-form__form-group -->
+            </form>
+          </div>
+          <!-- /.header-nav-search -->
+        </div>
+        <!-- /#mobileSearch -->
+
+        <div id="mobileNav" class="collapse">
+          <nav role="navigation" class="mobile-nav">
+            <div class="mobile-nav__auth">
+              <a class="mobile-nav__auth-link" href="">Sign Out</a>
+            </div>
+
+            <ul class="mobile-nav-primary">
+              <li class="mobile-nav-primary__item">
+                <a href="" class="mobile-nav-primary__link">Home</a>
+              </li>
+              <li class="mobile-nav-primary__item">
+                <a
+                  href="#mnAccount"
+                  class="mobile-nav-primary__link mobile-nav-primary__link--has-children"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  aria-controls="mnAccount"
+                  >My Library</a
+                >
+                <ul class="mobile-nav-secondary collapse" id="mnAccount">
+                  <li class="mobile-nav-secondary__item">
+                    <a href="" class="mobile-nav-secondary__link"
+                      >My Dashboard</a
+                    >
+                  </li>
+                  <li class="mobile-nav-secondary__item">
+                    <a href="" class="mobile-nav-secondary__link"
+                      >Viewing History</a
+                    >
+                  </li>
+                  <li class="mobile-nav-secondary__item">
+                    <a href="" class="mobile-nav-secondary__link"
+                      >AICP-CM Activities</a
+                    >
+                  </li>
+                  <li class="mobile-nav-secondary__item">
+                    <a href="" class="mobile-nav-secondary__link">Logout</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mobile-nav-primary__item">
+                <a href="" class="mobile-nav-primary__link"
+                  >Find a presentation</a
+                >
+              </li>
+              <li class="mobile-nav-primary__item">
+                <a href="meetings.html" class="mobile-nav-primary__link"
+                  >Meetings</a
+                >
+              </li>
+              <li class="mobile-nav-primary__item">
+                <a href="" class="mobile-nav-primary__link">Help</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- /.mobile-nav -->
+        </div>
+        <!-- .#mobileNav -->
+      </header>
+      <!-- site-header -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- MAIN -->
+
+<main role="main" id="maincontent" class="site-main">
+
+
+
+
+
+
+
+
+
+<!-- MEETING MASTHEAD -->
+
+	
+<div class="meeting-masthead">
+<div class="meeting-masthead__bg" style="background-image: url(img/placeholders/thumb-placeholder-008.jpg)">
+	
+
+
+<div class="meeting-masthead__content">
+
+<div class="meeting-masthead__container">
+<div class="meeting-masthead__row">
+<div class="meeting-masthead__col">
+
+<div class="meeting-masthead__info">
+
+<div class="meeting-masthead__thumb">
+<img src="img/placeholders/thumb-placeholder-008.jpg" width="800" height="450" alt="" class="meeting-masthead__img"/>
+</div><!-- /.meeting-masthead__thumb -->
+
+<div class="meeting-masthead__details">
+<h1 class="meeting-masthead__title">2019 ICMA Virtual Annual Conference</h1><!-- /.meeting-masthead__title -->
+<p class="meeting-masthead__date">Oct 19-23, 2019</p><!-- /.meeting-masthead__date -->
+<p class="meeting-masthead__location">Nashville, TN</p><!-- /.meeting-masthead__location -->
+
+
+<div class="meeting-masthead__details-ftr">
+
+<div class="meeting-masthead__type">
+Annual Conference
+</div><!-- /.meeting-masthead__type -->
+
+<div class="meeting-masthead__social">
+	<ul class="meeting-masthead-social-list">
+		<li class="meeting-masthead-social-list__item">
+		<span class="meeting-masthead-social-list__icon meeting-masthead-social-list__icon--facebook"></span><span class="sr-only">Share on facebook</span></li>
+		<li class="meeting-masthead-social-list__item">
+		<span class="meeting-masthead-social-list__icon meeting-masthead-social-list__icon--twitter"></span><span class="sr-only">Share on twitter</span></li>
+		<li class="meeting-masthead-social-list__item">
+		<span class="meeting-masthead-social-list__icon meeting-masthead-social-list__icon--linkedin"></span><span class="sr-only">Share on linkedin</span></li>
+	</ul>  
+</div><!-- /.meeting-masthead__social -->
+
+</div><!-- /.meeting-masthead__details-ftr -->
+
+</div><!-- /.meeting-masthead__details -->			
+
+</div><!-- /.meeting-masthead__info -->
+
+
+</div><!-- /.meeting-masthead__col -->
+</div><!-- /.meeting-masthead__row -->
+</div><!-- /.meeting-masthead__container -->
+
+</div><!-- /.meeting-masthead__content -->
+
+</div><!-- /.meeting-masthead__bg -->
+
+</div><!-- /.meeting-masthead -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- MEETING NAV -->
+
+
+<div class="meeting-nav">
+
+<div class="meeting-nav__container">
+<div class="meeting-nav__row">
+<div class="meeting-nav__col">
+
+
+<ul class="meeting-nav-list">
+<li class="meeting-nav-list__item"><a href="meeting-detail-about.html" class="meeting-nav-list__link meeting-nav-list__link--active">Details</a></li>
+<li class="meeting-nav-list__item"><a href="meeting-detail-presentations.html" class="meeting-nav-list__link">Presentations</a></li>
+<li class="meeting-nav-list__item"><a href="meeting-detail-cme.html" class="meeting-nav-list__link">CME</a></li>
+</ul><!-- /.meeting-nav-list -->
+
+
+</div><!-- /.meeting-nav__col -->
+</div><!-- /.meeting-nav__row -->
+</div><!-- /.meeting-nav__container -->
+
+</div><!-- /.meeting-nav -->
+
+
+
+
+
+<!-- MEETING MAIN -->
+
+
+<div class="meeting-main">
+<div class="meeting-main__container">
+<div class="meeting-main__row">
+
+
+
+<div class="col-md-8">
+
+<div class="meeting-main-content">
+	
+
+	
+	
+<div class="meeting-main-content__about">
+
+<h3 class="meeting-main-heading-1">About this meeting</h3>
+
+<p>In the 27th century, humanity has spread across the galaxy, first aboard "Hawking drive" ships and then through "farcasters", which permit nearly instantaneous travel regardless of distance. However, many planets are of little economic interest and disconnected from the farcasters. These planets can only be reached by spaceship, resulting in time dilation effects which cause "time debt" accruals.</p>
+
+	
+<div class="collapse" id="programMore" aria-expanded="false" style="height: 0px;">
+
+<p>The farcaster network (the "WorldWeb") is the infrastructural and economical basis of the Hegemony of Man and thus determines the whole culture and society. Also flowing across these portals are the structures of the datasphere (a network reminiscent of the Internet in design, but far more advanced). Inseparable from mankind's technologies is the powerful, knowledgeable, and utterly inscrutable TechnoCore, the vast agglomeration of millions of AIs who run almost every piece of high technology of mankind. The unthinking hubris of man resulted in the death of the home-world (Earth)—which was consumed by an artificial black hole running out of control—and this arrogant philosophy was carried forth to the stars, for centuries.</p>
+
+<p>The Hegemony itself is a largely decadent society, relying on its military to incorporate into the WorldWeb the colony planets, even unwillingly, and to defend the Hegemony from attacks by the Ousters, "interstellar barbarians" who dwell free of and beyond the bounds of the Hegemony and shun all the works of the TechnoCore (especially farcasters). Ostensibly a direct democracy governed through the "All Thing" forum, the Hegemony is also managed by a chief executive officer advised by the TechnoCore advisory council and the Hegemony Senate.</p>
+
+<p>All the 'Core's advice and predictions are confounded by mysterious structures on the remote colony world Hyperion (named after the moon of Saturn) that are commonly regarded as the Time Tombs. The tombs are encased in an anti-entropic field that is theorised to be carrying them backwards in time (suggesting that the tombs were built in the distant future for some unknown purpose) and are said to be guarded by a legendary time travelling creature known as the Shrike. The Shrike is the subject of a cult, the Church of the Final Atonement, commonly known as the Shrike Church. Occasionally the church sends a prime number of pilgrims to the Time Tombs; there is a legend that all but one are slaughtered and the remaining pilgrim is granted a wish.</p>
+
+<p>The Ousters have been long obsessed with Hyperion, and on the eve of their invasion and a probable war, a final pilgrimage has been organised. Seven pilgrims have been carefully selected by unseen elements of the TechnoCore to make the journey to the Time Tombs and the Shrike, with the objective of aiding the Hegemony in the imminent war. Aboard a treeship the pilgrims finally meet after being revived out of their cryogenic storage state; and, collectively overwhelmed by the mystery and magnitude of their situation, they decide that they will each tell their tale to enliven the long trip to the Tombs, to get to know each other, and to make sense of their situation. Simmons uses this device to unfold the panorama of this universe, its history and conflicts, and each story gives a greater context to the others. The story opens in medias res with the Consul recalled to the WorldWeb and the seven pilgrims (the infant Rachel does not count) drawing lots to see who will tell their tale first in the hopes of revealing a reason they were chosen and how to survive.</p>
+
+</div><!-- /collapse -->	
+
+	
+<p class="course-more__see-more collapsed">
+<button class="course-more__more-btn collapsed" type="button" data-toggle="collapse" data-target="#programMore" aria-expanded="false" aria-controls="programMore">See More</button>
+</p><!-- /.course-more__see-more -->
+	
+
+
+</div><!-- /.meeting-main-content__about -->
+
+	
+			
+	
+
+
+
+
+
+
+
+
+
+
+<div class="expansion-panel-group">
+<div class="expansion-panel">
+
+<div class="expansion-panel__header">
+<a class="expansion-panel__trigger collapsed" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+ Format
+</a>
+<i class="expansion-panel__icon" aria-hidden="true">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.6,8.6,12,13.2,7.4,8.6,6,10l6,6,6-6Z"></path></svg>
+</i>
+</div><!-- /.expansion-panel__header -->
+
+<div class="expansion-panel__collapse collapse" id="collapseExample" aria-expanded="false" style="height: 0px;">
+<div class="expansion-panel__body">
+<p>Kindle Book<br>
+Adobe EPUB eBook 3.4 MB</p>
+</div><!-- /.expansion-panel__body -->
+</div><!-- /.expansion-panel__collapse -->
+
+
+</div><!-- /.expansion-panel -->
+
+
+
+<div class="expansion-panel">
+
+<div class="expansion-panel__header">
+<a class="expansion-panel__trigger" role="button" data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+  Publication Details
+</a>
+<i class="expansion-panel__icon" aria-hidden="true">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.6,8.6,12,13.2,7.4,8.6,6,10l6,6,6-6Z"></path></svg>
+</i>
+</div><!-- /.expansion-panel__header -->
+
+<div class="expansion-panel__collapse collapse" id="collapseExample2">
+<div class="expansion-panel__body">
+
+<p>Publisher: Random House Publishing Group</p>	
+<p>Imprint: Spectra</p>
+<p>Publication Date: 2011</p>
+<p>Series: Hyperion Cantos</p>
+<p>Available in: United States, Singapore, Canada, Germany, Israel</p>
+
+
+</div><!-- /.expansion-panel__body -->
+</div><!-- /.expansion-panel__collapse -->
+
+
+</div><!-- /.expansion-panel -->
+
+
+
+<div class="expansion-panel">
+
+<div class="expansion-panel__header">
+<a class="expansion-panel__trigger" role="button" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+  Dan Simmons (Author)
+</a>
+<i class="expansion-panel__icon" aria-hidden="true">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.6,8.6,12,13.2,7.4,8.6,6,10l6,6,6-6Z"></path></svg>
+</i>
+</div><!-- /.expansion-panel__header -->
+
+<div class="expansion-panel__collapse collapse" id="collapseExample3">
+<div class="expansion-panel__body">
+<p>Dan Simmons, a full-time public school teacher until 1987, is one of the few writers who consistently work across genres, producing novels described as science fiction, horror, fantasy, and mainstream fiction, while winning major awards in all the...</p>
+</div><!-- /.expansion-panel__body -->
+</div><!-- /.expansion-panel__collapse -->
+
+
+</div><!-- /.expansion-panel -->
+
+
+</div><!-- /.expansion-panel-group -->
+
+
+
+
+
+
+
+
+
+</div><!-- /.meeting-main-content -->
+
+</div><!-- /.col-md-8 -->
+
+
+<div class="col-md-4">
+<div class="meeting-main-aside meeting-main-aside--right">
+
+	<div class="meeting-main-aside__btn">
+		<button class="cbtn cbtn--large cbtn--block">Buy Now</button>
+	</div><!-- /.meeting-main-aside__btn -->
+		
+<div class="meeting-main-aside__callout">
+<h3 class="meeting-main-heading-2">heading</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quibusdam totam facere vero adipisci suscipit repudiandae, esse illum cumque iure.</p>	
+</div><!-- /.meeting-main-aside__callout -->
+
+
+</div><!-- /.meeting-main-aside -->
+
+</div><!-- /.col-md-4 -->
+
+
+
+
+
+
+
+</div><!-- /.meeting-main__row -->
+</div><!-- /.meeting-main__container -->
+
+</div><!-- /.meeting-main -->
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+</main><!-- /.site-main -->
+
+
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+
+
+<footer class="cc-footer" role="contentinfo">
+	
+<div class="cc-footer__content">
+
+<div class="cc-footer__container">
+
+<div class="cc-footer__row">
+<div class="cc-footer__col cc-footer__col--address">
+
+
+
+
+	
+<img src="img/footer/site-footer-logo.svg" class="cc-footer__logo" alt="ICMA">
+<p class="cc-footer__biline">American Railway Engineering and <br>Maintenance-of-Way Association</p>
+<p class="cc-footer__tagline">Advancing an industry, innovating a future.</p>
+<p class="cc-footer__address">4501 Forbes Blvd., Suite 130<br>Lanham, Maryland 20706<br>T: +1.301.459.3200<br>E: <a href="mailto:info@ICMA.org">info@ICMA.org</a></p>
+</div><!-- /.cc-footer__col -->
+	
+	
+<div class="cc-footer__col cc-footer__col--links">
+	
+<div class="cc-footer-links">
+	
+<ul class="cc-footer-link-list">
+<li class="cc-footer-link-list__item"><a href="">ICMA.org</a></li>
+<li class="cc-footer-link-list__item"><a href="">careers.ICMA.org</a></li>
+<li class="cc-footer-link-list__item"><a href="">AREMAfoundation.org</a></li>
+</ul><!-- /.cc-footer-link-list -->
+
+
+<ul class="cc-footer-social-list">
+	<li class="cc-footer-social-list__item">
+		<a href="https://www.facebook.com/AREMArail/" class="cc-footer-social-list__link cc-footer-social-list__link--facebook" target="_blank">Facebook</a>
+	</li><!-- /.cc-footer-social-list__item -->
+	<li class="cc-footer-social-list__item">
+		<a href="https://www.linkedin.com/company/american-railway-engineering-and-maintenance-of-way-association-ICMA-?trk=company_logo" class="cc-footer-social-list__link cc-footer-social-list__link--linkedin" target="_blank">LinkedIn</a>
+	</li><!-- /.cc-footer-social-list__item -->
+	<li class="cc-footer-social-list__item">
+		<a href="https://twitter.com/AREMArail" class="cc-footer-social-list__link cc-footer-social-list__link--twitter" target="_blank">Twitter</a>
+	</li><!-- /.cc-footer-social-list__item -->
+</ul><!-- /.cc-footer-social-list -->
+	
+
+</div><!-- /.cc-footer-links -->
+
+</div><!-- /.cc-footer__col -->	
+	
+
+</div><!-- /.cc-footer__row -->
+
+</div><!-- /.cc-footer__container -->	
+	
+</div><!-- /.cc-footer__content -->	
+	
+
+<div class="cc-footer__copyright">
+<div class="container" role="navigation">
+<p>Copyright &copy; 2018 ICMA &nbsp;|&nbsp; <a href="http://conference.ICMA.org/AREMA_Conf/Terms_of_Use">Terms of Use</a></p>
+</div><!-- /.cc-footer__container -->
+</div><!-- /.cc-footer__copyright -->		
+	
+
+
+</footer><!-- /.cc-footer -->
+
+
+
+
+
+
+
+</div><!-- /.page -->
+
+
+
+
+<script src="js/plugins.js"></script>
+
+
+<script src="js/scripts.js"></script>
+<script src="js/local-scripts.js"></script>
+
+
+
+
+</body>
+</html>

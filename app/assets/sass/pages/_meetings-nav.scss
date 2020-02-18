@@ -1,0 +1,68 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the meetings detail page.
+// Meetings nav
+// -----------------------------------------------------------------------------
+
+
+.meeting-nav {
+    margin: 0;
+
+    &__container{ 
+        //@extend .container;
+        width: 100%; 
+        padding: 0;
+     }
+    &__row{ 
+        margin: 0; 
+    }
+    &__col{ 
+        width: 100%; 
+        padding: 0;
+    }
+}
+
+.meeting-nav-list{
+    padding: 0;
+    //background-color: orchid;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    border-bottom: solid 3px #eee;
+
+    @media (min-width: $screen-sm-min) { 
+     //justify-content: flex-start;
+    }
+
+    &__item{
+        //background-color: red;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__link{
+        padding: 2*$padding-base 2.5*$padding-base;
+        display: block;
+        text-align: center;
+        //font-family: $headings-font-family; 
+        font-weight: 400;
+        font-size: 1.6rem; 
+        color: #9e9e9e;
+
+
+         @media (min-width: $screen-sm-min) { 
+            padding: 3*$padding-base 8*$padding-base;
+            font-size: 1.8rem; 
+         }
+
+        &--active{
+              box-shadow: 0 3px 0 $brand-primary;
+              color: $text-color;
+        }
+
+        @include on-event {
+        color: $brand-primary;
+        text-decoration: none;
+        }
+    }
+}

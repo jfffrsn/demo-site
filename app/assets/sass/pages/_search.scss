@@ -1,0 +1,123 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the search page.
+// -----------------------------------------------------------------------------
+
+
+.search-results-search-group{
+     @extend .col-sm-12;
+}
+
+.search-results-search{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+.search-results-search-form{
+
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.search-results-search-form__form-group{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.search-results-search-form__form-control{
+
+
+    &--label{
+        border: 0;
+    }
+
+        &--field{
+          flex: 1;
+          background-color: orchid;
+
+    }
+
+        &--btn{
+        //background-color: yellow;
+         margin: 0 $padding-base;
+    }
+}
+
+
+
+
+
+.search-results-search-form__icon{
+    width: 24px;
+    //background-color: lime;
+      margin: 0 $padding-base;
+
+    >svg{
+         width: 100%;
+         height: auto;
+         display: block;
+         fill: #616161;
+    }
+}
+
+
+.search-results-search-form__label{
+    @extend .sr-only;
+}
+
+.search-results-search-form__input {
+    font-size: 2.2rem;
+    display: block;
+    width: 100%;
+    border: 0;
+    border-right:0;
+    padding: $padding-base 2*$padding-base $padding-base $padding-base;
+    //height: 37px;
+    transition: all 0.25s ease-in-out;
+    //background-color: #ff3;
+     color: #616161;
+
+        &:focus{
+            border-color: $form-border-color-hover;
+            outline: none;
+            color: #212121;
+        }
+
+}
+
+
+.search-results-search-form__btn{
+    padding: 0;
+    border-radius: 2px;
+    background-color: transparent;
+    border: 0;
+    width: 40px;
+    height: 40px;
+    outline: 0;
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+    svg{
+        fill: #616161;
+    }
+
+    @include on-event {
+        color: $link-hover-color;    
+        text-decoration: none;
+
+        svg{
+            fill: #212121;
+        }
+    }
+}
+
+.search-results-search-form__btn-icon{
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+

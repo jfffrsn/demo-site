@@ -1,0 +1,176 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the button component.
+//HBTN 
+// -----------------------------------------------------------------------------
+
+//variables
+// 1. Colors
+// ==========================================================================
+
+
+
+// 2. Variables
+// ==========================================================================
+
+// Shared styles
+$hbtn-border: #d6d6d6 1px solid;
+$hbtn-background-focus: lighten($brand-primary, 4%) !default;
+$hbtn-font-size: 1.5rem !default;
+$hbtn-font-weight: 500 !default;
+
+$hbtn-height: 40px !default;
+$hbtn-padding: 0 2*$padding-base !default;
+$hbtn-radius: 2px !default;
+
+// Disabled styles
+$hbtn-disabled-background: #DFDFDF !default;
+$hbtn-disabled-color: #9F9F9F !default;
+
+// Raised buttons
+$hbtn-raised-background: #fff;
+$hbtn-raised-background-hover: #eee !default;
+$hbtn-raised-color: #222 !default;
+
+// xsmall buttons
+$hbtn-xsmall-height: $hbtn-height * .6 !default;
+
+// small buttons
+$hbtn-small-height: $hbtn-height * .8 !default;
+
+// Large buttons
+$hbtn-large-height: $hbtn-height * 1.5 !default;
+
+
+
+///
+
+//hbtn
+
+/////////////
+
+
+.hbtn {
+  text-decoration: none;
+  color: $hbtn-raised-color;
+  background-color: $hbtn-raised-background;
+  text-align: center;
+  transition: .2s ease-out;
+  cursor: pointer;
+
+  font-size: $hbtn-font-size;
+  font-weight: $hbtn-font-weight;
+
+  border: $hbtn-border;
+  border-radius: $hbtn-radius;
+  display: inline-block;
+  height: $hbtn-height;
+  line-height: $hbtn-height;
+  padding: $hbtn-padding;
+  vertical-align: middle;
+  // Gets rid of tap active state
+  -webkit-tap-highlight-color: transparent;
+
+  &:hover {
+    background-color: $hbtn-raised-background-hover;
+    color: $hbtn-raised-color;
+    text-decoration: none;
+  }
+
+   &:focus {
+    background-color: darken($hbtn-raised-background, 20%);
+    outline: 0;
+  }
+
+  // default button
+  &--default {
+  background-color: #ccc;
+  color: #333;
+
+      &:hover {
+      background-color: #bbb;
+      color: #333;
+      text-decoration: none;
+      }
+
+      &:focus {
+      background-color: #bbb;
+      outline: 0;
+      }
+
+  }
+
+ &--rounded{
+  border-radius: 20px;
+ }
+
+ &--primary{
+  color: $brand-primary;
+ }
+
+  &--secondary{
+  color: $brand-secondary;
+ }
+
+  &--xsmall {
+    height: $hbtn-xsmall-height;
+    line-height: $hbtn-xsmall-height;
+    font-size: 12px;
+    padding:0 $padding-base;
+    text-transform: uppercase;
+  }
+
+  // small button
+  &--small {
+    height: $hbtn-small-height;
+    line-height: $hbtn-small-height;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  // Large button
+  &--large {
+    height: $hbtn-large-height;
+    line-height: $hbtn-large-height;
+  }
+
+  // Block button
+  &--block {
+    display: block;
+    width: 100%; //button tag needs
+  }
+
+
+
+
+  // Disabled
+  &--disabled {
+    pointer-events: none;
+    background-color: $hbtn-disabled-background !important;
+    box-shadow: none;
+    color: $hbtn-disabled-color !important;
+    cursor: default;
+
+    &:hover {
+      background-color: $hbtn-disabled-background !important;
+      color: $hbtn-disabled-color !important;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

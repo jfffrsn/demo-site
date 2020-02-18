@@ -1,0 +1,23 @@
+// ---------------------------------------------------------------------------
+// Errors
+
+.error-group{  @extend .col-md-6; @extend .col-md-offset-3;}
+
+
+.error-msg{ text-align: center; padding: 2rem 2rem 4rem 2rem;
+    &__title{ color: $brand-primary; font-size: 6rem; font-weight: 300; margin-top:0;
+         @media (min-width: $grid-float-breakpoint) { font-size: 13rem; } 
+    }
+    &__subtitle{ color: #444; font-size: 2.4rem; font-weight: 400; text-transform:uppercase;
+        @media (min-width: $grid-float-breakpoint) { font-size: 3rem; font-weight: 300; } 
+    }
+
+    &__content{ font-size: 1.6rem; font-weight: 300; 
+        @media (min-width: $grid-float-breakpoint) { font-size: 2.1rem;}
+    }
+
+    &__action{ padding-top: 2rem;}
+    &__btn{ @extend .btn; @extend .btn-primary; @extend .btn-lg; }
+}
+
+

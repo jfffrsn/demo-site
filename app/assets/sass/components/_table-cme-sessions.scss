@@ -1,0 +1,98 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the settings list component. 
+// -----------------------------------------------------------------------------
+
+.table-cme-sessions{
+    @extend .table;
+    
+
+    // Cells
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        padding: 1.5*$padding-base;
+        line-height: $line-height-base;
+        vertical-align: top;
+        border-top: 1px solid $table-border-color;
+      }
+    }
+  }
+  // Bottom align for column headings
+  > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 2px solid $table-border-color;
+    font-weight: 500;
+    color: #212121;
+  }
+  // Remove top border from thead by default
+  > caption + thead,
+  > colgroup + thead,
+  > thead:first-child {
+    > tr:first-child {
+      > th,
+      > td {
+        border-top: 0;
+      }
+    }
+  }
+
+
+
+  .cell-width-100{
+    width: 100%;
+  }
+  .cell-no-wrap{
+    white-space: nowrap;
+
+  }
+  .cell-align-center{
+    text-align: center;
+  }
+    .cell-align-right{
+    text-align: right;
+  }
+
+}
+
+//
+
+
+
+
+
+.table-cme-sessions--bordered {
+  border: 1px solid $table-border-color;
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        border: 1px solid $table-border-color;
+      }
+    }
+  }
+  > thead > tr {
+    > th,
+    > td {
+      border-bottom-width: 2px;
+    }
+  }
+}
+
+
+// Zebra-striping
+//
+// Default zebra-stripe styles (alternating gray and transparent backgrounds)
+
+.table-cme-sessions--striped {
+  > tbody > tr:nth-of-type(odd) {
+    background-color: $table-bg-accent;
+  }
+}
+
+
+

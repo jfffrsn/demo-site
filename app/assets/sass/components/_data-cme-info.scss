@@ -1,0 +1,151 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the cme info from the database. 
+// -----------------------------------------------------------------------------
+.cme-info-db-block{
+  //wrapper not needed elsewhere
+  margin: 0 0 3*$padding-base 0;
+  background-color: #fafafa;
+  padding: 1*$padding-base 3*$padding-base 2*$padding-base 3*$padding-base;
+}
+.cme-info-db{
+    //background-color: pink;
+
+    h1,h2,h3,h4,h5,h6{
+        font-family: $font-family-sans-serif;
+    }
+
+    h1{
+
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #212121;
+
+    }
+    h2{
+
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #212121;
+    //background-color: lime;
+    }
+    h3{
+           font-size: 1.6rem;
+    font-weight: 500;
+    color: #212121;
+     //background-color: orange;
+    }
+    h4{}
+    h5{}
+    h6{}
+
+    p{}
+
+    p + h2,
+    p + h3,
+    p + h4,
+    p + h5,
+    p + h6,
+    ol + h2,
+    ol + h3,
+    ol + h4,
+    ol + h5,
+    ol + h6,
+    ul + h2,
+    ul + h3,
+    ul + h4,
+    ul + h5,
+    ul + h6{
+        margin-top: 3rem;
+    }
+
+    ul, ol{
+        padding: 0 0 0 1.6rem;
+
+        > li{
+            margin: .4rem 0;
+        }
+    }
+
+    p + table,
+    h1 + table,
+    h2 + table,
+    h3 + table,
+    h4 + table,
+    h5 + table,
+    h6 + table{
+     margin-top: 2rem;
+    }
+
+table{
+
+  width: 100%;
+  max-width: 100%;
+  margin: 0 0 3rem 0;
+  border: none;
+  // Cells
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        padding: 1rem;
+        line-height: $line-height-base;
+        vertical-align: top;
+        border-bottom: 1px solid $table-border-color;
+
+        >b, strong{
+            font-weight: 500;
+        }
+      }
+    }
+  }
+
+
+  // Bottom align for column headings
+  tr > th {
+    font-weight: 500;
+  }
+
+  > tfoot > tr > td {
+    font-size: 1.2rem;
+    color: #767676;
+    
+  }
+  // Remove top border from thead by default
+  > caption + thead,
+  > colgroup + thead,
+  > thead:first-child {
+    > tr:first-child {
+      > th,
+      > td {
+        border-top: 0;
+      }
+    }
+  }
+
+
+
+
+    th[scope=col] {
+    font-weight: 500;
+    background-color: $brand-primary;
+    color: #fff;
+    }
+
+    th[scope=row] {
+    font-weight: 500;
+    color: #212121;
+    }
+
+
+    tr:nth-of-type(odd) {
+    background-color: $table-bg-accent;
+    }
+}
+
+
+
+
+
+}

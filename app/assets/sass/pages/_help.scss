@@ -1,0 +1,147 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the help/faq page.
+// -----------------------------------------------------------------------------
+
+
+.help-main{
+    @include clearfix;
+
+
+    &__row{ @extend .row; }
+    &__col{ @extend .col-sm-12; 
+
+        &--form{ @extend .col-md-9; }
+        &--aside{ @extend .col-md-3; }
+    }
+}
+
+
+.help-section{  
+    margin: 0 0 6rem 0;
+
+    &__header{
+        //background-color: peachpuff;
+        margin: 0 0 2rem 0;
+    }
+
+    &__title{
+        margin: 0;
+        padding: 0;
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 1.3;
+        color: $text-headings-color;
+        letter-spacing: 0;
+        font-family: $font-family-sans-serif;
+    }
+ }
+
+
+
+
+
+.help-question-group{ margin: 0 0 1.5rem 0;}
+
+.help-question{ 
+    display: block; 
+    position:relative;
+    border: $panel-default-border 1px solid;
+    font-weight: 400; font-size:1.4rem; 
+    font-family:$font-family-base; 
+    color: #000; 
+    //background-color: $panel-default-heading-bg;
+    display: block; 
+    padding: 1.5rem;
+    
+
+
+    
+}
+
+
+
+
+.help-question{ 
+    //background-color: pink;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0 0 $padding-base 0;
+
+    &__hdr {
+    //background-color: lime;
+    padding: 0;   
+    }
+    &__title {
+        //background-color: seagreen;
+        padding: 0;
+        margin: 0;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.3;
+        color: #212121;
+        letter-spacing: -.18px;
+        font-family: $font-family-sans-serif;
+    }
+    &__link {
+    display: block;
+    //color: #212121;
+    padding: 2*$padding-base 2*$padding-base; 
+
+      @include on-event {
+            color: #212121;
+            background-color: rgba(0,0,0,.03);
+            text-decoration: none;
+            }    
+    }
+
+    &__answer{
+    background-color: #fff;
+    border-top: $panel-default-border 1px solid;
+    padding: 2*$padding-base;
+    }
+
+
+}
+
+
+//
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+a.help-question__link:before {
+    float: right !important;
+    font-family: FontAwesome;
+    content:"\f056";
+    padding-right: 5px;
+}
+a.help-question__link.collapsed:before {
+    float: right !important;
+    content:"\f055";
+}
+
+
+
+
+
+
+
+
+//sidebar
+
+.help-sidebar{  @extend .col-md-3; 
+    @media (min-width: $screen-md) {}
+}
+.help-sidebar-group{ }
+
+.help-topics{ 
+
+    h3{ margin: 0 0 1em 0;}
+    .help-topic-list{ list-style: none; padding: 0;
+        >li{ border-bottom: $panel-default-border 1px solid; padding: .5em 0em;
+            
+            a{ display: block; }
+        }
+    }
+
+}
+
+

@@ -1,0 +1,99 @@
+// ---------------------------------------------------------------------------
+// Owl carousel
+
+.owl-theme {
+	// Styling Next and Prev buttons
+	.owl-nav { 
+		margin-top: -50px;  
+		text-align: right;
+		-webkit-tap-highlight-color: transparent; 
+		//background: orange; 
+		position: absolute; 
+		top:0; 
+		left:0; 
+		width: 100%;
+		display: none;
+
+		@media (min-width: $grid-float-breakpoint) {
+			display: block;
+		}
+
+		[class*='owl-'] {
+			color: rgba(0,0,0,1);
+			font-size: 14px;
+			margin: 0;
+			padding: 0;
+			//background: green;
+			display: block;
+			cursor: pointer;
+			width: 18px;
+			height: 40px;
+			opacity: 1;
+			border-radius: 0;
+			&:hover { 
+				color: #fff; 
+				background: $brand-primary;
+				text-decoration: none; 
+				opacity: 1; 
+			}
+		}
+		.disabled { opacity: 0.4; cursor: default; 
+			&:hover{opacity: 0.4;}
+		}
+
+
+
+		.owl-next{ 
+			  font-size: 12px;
+			  border: 1px solid #e3e3e3;
+			position: absolute;
+			top: 0;
+			right: 0px;
+			background:  #fff; 
+			width: 40px;
+  			height: 32px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			
+		}
+		.owl-prev{ 
+			  font-size: 12px;
+			  border: 1px solid #e3e3e3;
+			position: absolute;
+			top: 0;
+			right: 46px;
+			background: #fff;  
+			width: 40px;
+  			height: 32px;	
+  			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+
+	}
+
+	// Styling dots
+	.owl-nav.disabled + .owl-dots { margin-top: 10px; }
+	.owl-dots { text-align: center; -webkit-tap-highlight-color: transparent; margin-top: 1em;
+		.owl-dot { display: inline-block; zoom: 1; *display: inline;
+			span {
+				width: 8px;
+				height: 8px;
+				margin: 5px;
+				background: #e4e5e7;
+				display: block;
+				border-radius: 30px;
+				-webkit-backface-visibility: visible;
+				transition: opacity 200ms ease;
+			}
+
+			&.active, &:hover {
+				span { background: #6e7178; }
+			}
+		}
+	}
+}
+
+

@@ -1,0 +1,222 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the component 'share' menu. 
+// -----------------------------------------------------------------------------
+
+
+.menu-share{
+    background-color: #fff;
+    border: #eee 1px solid;
+    padding: 2.5*$padding-base;
+
+    &--modal{
+        border: 0;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    &__hdr{
+        //background-color: yellow;
+        //padding: 10px;
+        margin-bottom: 1*$padding-base;
+    }
+    
+    &__title{
+        font-size: 1.5rem;
+        font-weight: 500;
+        font-family: $headings-font-family;
+        letter-spacing: -0.1px;
+    }
+
+    &__content{
+    //background-color: lime;
+    //border: red 1px solid;
+    }
+
+    &__social{
+        //border: purple 1px solid;
+        //background-color:   Wheat;
+        margin-bottom: 2*$padding-base;
+    }
+
+    &__send{
+        //border: purple 1px solid;
+        //margin-top: 20px;
+        //background-color:   Wheat;
+    }    
+
+    &__ftr{
+        //background-color: orange;
+        //padding: 10px;
+        border-top: $gray1 1px solid;
+        margin-top: $padding-base;
+        padding: 2*$padding-base 0 0 0;
+    }
+
+
+
+
+}
+
+
+
+
+//social media icons
+
+.share-icons{
+    //padding: 30px;
+    //background-color:   DeepSkyBlue;
+    //border: brown 2px solid;
+
+
+
+}
+
+//icon list
+.share-icon-list{
+    list-style: none;
+    padding: $padding-base 0 0 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    //background-color: yellow;
+    //border: brown 1px solid;
+    
+
+    &__item{
+    //background-color: gainsboro;
+    //border: 1px solid black;
+    padding: 0;
+    margin-right: $padding-base;
+    margin-bottom: $padding-base;
+   
+
+        &:last-of-type{
+            margin-right: 0;
+        }
+    }
+
+    &__link{
+        width: 3.6rem;
+        height: 3.6rem;
+        display: block;
+
+        > svg{
+            //background-color: red;
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    &__icon{
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        vertical-align: middle;
+        margin: 0 1rem 0 0;
+        font-size: 1.6rem;
+        line-height: 2;
+        color: #fff;
+        background-position: 50% 50%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-color: red;
+
+        &--facebook{
+            background-image: url("../img/social/share-icon-facebook.svg");
+            background-color: #3b5998;
+        }
+
+        &--twitter{
+            background-image: url("../img/social/share-icon-twitter.svg");
+            background-color: #3cf;
+        }
+        &--youtube{
+            background-image: url("../img/social/share-icon-youtube.svg");
+            background-color: #e62d27;
+        }   
+        &--linkedin{
+            background-image: url("../img/social/share-icon-linkedin.svg");
+            background-color: #0976b4;
+        } 
+        &--googleplus{
+            background-image: url("../img/social/share-icon-googleplus.svg");
+            background-color: #db4437;
+        }
+        &--pinterest{
+            background-image: url("../img/social/share-icon-pinterest.svg");
+            background-color: #bd081c;
+        }
+        &--reddit{
+            background-image: url("../img/social/share-icon-reddit.svg");
+            background-color: #78909C;
+        }         
+        &--email{
+            background-image: url("../img/social/share-icon-email.svg");
+            background-color: #4caf50;
+        }                   
+    }
+
+}
+
+
+
+
+
+
+//share link form
+
+.share-form{
+    //border: maroon 2px solid;
+    //padding: 30px;
+
+
+
+    &__form-group {
+        //border: slateblue 2px solid;
+        //padding: 10px;
+        //background-color: beige;
+        margin-bottom: 3*$padding-base;
+    }
+
+    &__form-control{
+        //background-color: orchid;
+        border: $form-border-color 1px solid;
+        padding: 1.25*$padding-base;
+          transition: all 0.25s ease-in-out;
+        //padding: 5px;
+
+        &:focus{
+            border-color: $form-border-color-hover;
+            outline: none;
+        }
+
+        &--url{
+            width: 100%;
+            font-size: 1.6rem;
+
+           // &::selection { background: yellow;  }
+        }
+        &--time{
+            width: 100%;
+            max-width: 90px;
+        }
+    }
+
+    &__start-time{
+        //background-color: plum;
+        //padding: 10px;
+        display: flex;
+        align-items: center;
+    }
+     &__start-time-toggle{
+        //background-color: peachpuff;
+        margin-right: 2*$padding-base;
+     }
+      &__start-time-timecode{
+        //background-color: green;
+      }
+}

@@ -1,0 +1,94 @@
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+
+@import
+  'abstracts/variables',
+  'abstracts/bootstrap-variables',
+  'abstracts/functions',
+  'abstracts/mixins',
+  'abstracts/helpers';
+
+
+
+
+
+// 2. Bootstrap SASS
+@import 
+  'bower_components/bootstrap-sass/assets/stylesheets/bootstrap',
+  'abstracts/bootstrap-grid-xl'; //added a larger breakpoint
+
+
+// 3. Themes
+
+
+// 3. Vendors
+@import
+ 'vendor/owl-carousel',
+ 'vendor/datatables';
+
+// 3.1 Vendors Extensions
+
+
+// 5. Base stuff
+@import
+  'base/base',
+  'base/fonts',
+  'base/skipnav',
+  'base/typography',
+  //'base/elements',
+  'base/helpers';
+
+// 6. Layout-related sections
+@import
+//  'layout/navigation',
+  'layout/header-ICMA',
+
+  'layout/mobile-nav',  
+  'layout/main',
+  'layout/sections',
+  'layout/section-split',
+  'layout/cc-section-hero-split',
+  'layout/footer';
+
+// 7. Components
+@import
+'components/buttons',
+'components/modals',
+'components/modal-search',
+'components/menu-dropdown',
+'components/menu-download',
+'components/menu-share',
+'components/menu-cme-notification',
+'components/menu-rating-histogram',
+'components/checkbox',
+'components/ratings',
+'components/thumbs',
+'components/lists',
+'components/ratings-control',
+'components/find-presentation',
+'components/expanding-blocks.scss',
+'components/data-cme-info.scss',
+'components/table-cme-sessions.scss';
+
+
+// 8. Page-specific styles
+@import
+//  'pages/home',
+  'pages/media-player',
+  'pages/account',
+  'pages/meetings',
+  'pages/meetings-masthead',
+  'pages/meetings-nav',
+  'pages/meetings-main',
+  'pages/meetings-about',
+  'pages/meetings-pres-sidebar',
+  'pages/meetings-pres-header',
+  'pages/product-masthead',
+  'pages/search',
+  'pages/home-hero',
+  'pages/home-features',
+  'pages/contact',
+  'pages/help',
+  'pages/errors',
+  'pages/shopping-cart';

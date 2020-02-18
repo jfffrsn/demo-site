@@ -1,0 +1,112 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the meeting main pages.
+// Meeting presentation list header
+// -----------------------------------------------------------------------------
+
+
+
+.meeting-pres-header {
+    margin: 0 0 2*$padding-base;
+    padding: 0;
+  //border-bottom: 1px solid #e0e0e0;
+
+    &__controls { 
+        display: flex;
+        align-items: center;
+        //background-color: #fc0;
+    }
+
+    &__title{ 
+        color: #212121;
+        font-weight: 500;
+        font-family: $font-family-sans-serif; 
+        font-size: 1.4rem; 
+         @media (min-width: $screen-md-min) {
+            font-size: 1.6rem;
+         }
+    }
+
+    &__sort { 
+        margin-left: auto;
+    }
+
+}
+
+
+/////////////////
+//select
+
+
+.meeting-pres-header__control-select {
+  position: relative;
+  display: inline-block;
+
+  width: 100%;
+
+  select {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #212121;
+    width: 100%;
+    cursor: pointer;
+    padding: 1*$padding-base 4*$padding-base 1*$padding-base 1.5*$padding-base;
+    outline: 0;
+
+    border: #e2e2e3 1px solid;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    border-radius: 0;
+    background: #fff;
+    appearance: none;
+
+    &::-ms-expand { display: none; }
+    
+    &:focus {
+      color: #000;
+      background-color: #fff;
+      border-color: $brand-primary;
+      outline: 0;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0);
+    }
+    &:disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  }
+}
+
+
+
+.meeting-pres-header__control-select__arrow {
+  position: absolute;
+  top: 14px;
+  right: 12px;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  border-style: solid;
+  border-width: 5px 4px 0 4px;
+  border-color: #000 transparent transparent transparent;
+}
+
+.meeting-pres-header__control-select select {
+  &:focus ~ .select__arrow {
+    border-top-color: #000;
+  }
+  &:disabled ~ .meeting-pres-header__control-select__arrow {
+    border-top-color: #ccc;
+  }
+}
+
+
+//  
+.meeting-pres-header__control-label{ 
+        //background-color: PowderBlue;
+        display: block;
+        font-weight: 400;
+        font-size: 1.4rem;
+        margin: 0;
+        color: #212121;
+
+
+    }

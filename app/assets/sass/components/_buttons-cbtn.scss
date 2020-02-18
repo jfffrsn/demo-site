@@ -1,0 +1,165 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the button component.
+// -----------------------------------------------------------------------------
+
+//variables
+// 1. Colors
+// ==========================================================================
+
+// 2. Variables
+// ==========================================================================
+
+// Shared styles
+$cbtn-border: none !default;
+$cbtn-background-focus: lighten($brand-primary, 4%) !default;
+$cbtn-font-size: 1.5rem !default;
+$cbtn-font-weight: 500 !default;
+
+$cbtn-height: 40px !default;
+$cbtn-padding: 0 2 * $padding-base !default;
+$cbtn-radius: 5px !default;
+
+// Disabled styles
+$cbtn-disabled-background: #dfdfdf !default;
+$cbtn-disabled-color: #9f9f9f !default;
+
+// Raised buttons
+$cbtn-raised-background: $brand-primary !default;
+$cbtn-raised-background-hover: darken($cbtn-raised-background, 10%) !default;
+$cbtn-raised-color: #fff !default;
+
+// xsmall buttons
+$cbtn-xsmall-height: $cbtn-height * 0.6 !default;
+
+// small buttons
+$cbtn-small-height: $cbtn-height * 0.8 !default;
+
+// Large buttons
+$cbtn-large-height: $cbtn-height * 1.5 !default;
+
+// xLarge buttons
+$cbtn-xlarge-height: $cbtn-height * 2 !default;
+
+// Flat buttons
+$cbtn-flat-color: #343434 !default;
+$cbtn-flat-disabled-color: lighten(#999, 10%) !default;
+
+///
+
+//CBTN
+
+/////////////
+
+.cbtn {
+  text-decoration: none;
+  color: $cbtn-raised-color;
+  background-color: $cbtn-raised-background;
+  text-align: center;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+
+  font-size: $cbtn-font-size;
+  font-weight: $cbtn-font-weight;
+
+  border: $cbtn-border;
+  border-radius: $cbtn-radius;
+  display: inline-block;
+  height: $cbtn-height;
+  line-height: $cbtn-height;
+  padding: $cbtn-padding;
+  vertical-align: middle;
+  // Gets rid of tap active state
+  -webkit-tap-highlight-color: transparent;
+
+  @include on-event {
+    background-color: $cbtn-raised-background-hover;
+    color: $cbtn-raised-color;
+    text-decoration: none;
+    outline: 0;
+  }
+
+  // default button
+  &--default {
+    background-color: #ccc;
+    color: #333;
+
+    @include on-event {
+      background-color: #bbb;
+      color: #333;
+      text-decoration: none;
+    }
+  }
+
+  &--xsmall {
+    height: $cbtn-xsmall-height;
+    line-height: $cbtn-xsmall-height;
+    font-size: 12px;
+    padding: 0 $padding-base;
+    text-transform: uppercase;
+  }
+
+  // small button
+  &--small {
+    height: $cbtn-small-height;
+    line-height: $cbtn-small-height;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+
+  // Large button
+  &--large {
+    height: $cbtn-large-height;
+    line-height: $cbtn-large-height;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  // Large button
+  &--xlarge {
+    height: $cbtn-xlarge-height;
+    line-height: $cbtn-xlarge-height;
+  }
+
+  // Block button
+  &--block {
+    display: block;
+    width: 100%; //button tag needs
+  }
+
+  // Flat button
+  &--flat {
+    background-color: transparent;
+    color: $cbtn-flat-color;
+
+    &:focus,
+    &:hover {
+      color: inherit;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    &:focus {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    &.cbtn--disabled {
+      background-color: transparent !important;
+      color: $cbtn-flat-disabled-color !important;
+      cursor: default;
+    }
+  }
+
+  // Disabled
+  &--disabled {
+    pointer-events: none;
+    background-color: $cbtn-disabled-background !important;
+    box-shadow: none;
+    color: $cbtn-disabled-color !important;
+    cursor: default;
+
+    &:hover {
+      background-color: $cbtn-disabled-background !important;
+      color: $cbtn-disabled-color !important;
+    }
+  }
+}

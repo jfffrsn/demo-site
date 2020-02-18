@@ -1,0 +1,142 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the composite list component.
+// -----------------------------------------------------------------------------
+
+.composite-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #757575;
+
+  &__item {
+    margin: 0;
+    padding: 3 * $padding-base 2 * $padding-base;
+    border-bottom: $gray1 1px solid;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $screen-sm-min) {
+      flex-direction: row;
+    }
+
+    &:last-of-type {
+      border-bottom: 0;
+    }
+  }
+
+  &__number {
+    margin-bottom: $padding-base;
+
+    @media (min-width: $screen-sm-min) {
+      margin-right: 2 * $padding-base;
+      margin-bottom: 0;
+    }
+
+    .playlist-number {
+      display: flex;
+      //background-color: red;
+      align-items: center;
+      justify-content: center;
+
+      &__item {
+        font-size: 1.2rem;
+        color: #ccc;
+        @media (min-width: $screen-sm-min) {
+          margin-top: 46px;
+        } //not great
+      }
+    }
+  }
+
+  &__thumb {
+    margin-bottom: 3 * $padding-base;
+    margin-right: 0;
+    @media (min-width: $screen-sm-min) {
+      margin-right: 4 * $padding-base;
+      margin-bottom: 0;
+      max-width: 200px;
+      min-width: 80px;
+    }
+  }
+
+  &__details {
+    //background-color: pink;
+    flex: 1;
+
+    span {
+      display: block;
+    } //change
+  }
+  &__btns {
+    //background-color: beige;
+    margin-left: 0;
+    margin-top: 2 * $padding-base;
+    @media (min-width: $screen-sm-min) {
+      margin-left: 4 * $padding-base;
+      margin-top: 0;
+    }
+  }
+}
+
+//txt items
+.composite-list-title {
+  display: block;
+  //background-color: slateblue;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: $padding-base 0;
+  color: $text-headings-color;
+}
+.composite-list-txt {
+  display: block;
+  //background-color: seagreen;
+  margin: $padding-base 0;
+
+  &--dark {
+    color: #212121;
+  }
+}
+
+//btn list
+.composite-btn-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    margin: $padding-base 0;
+  }
+}
+
+//speaker list
+.composite-speakers-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  //background-color: orchid;
+  margin: $padding-base 0;
+  font-size: 1.4rem;
+
+  &__item {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    &:after {
+      content: ", ";
+    }
+    &:last-child:after {
+      content: "";
+    }
+  }
+}
+
+//
+.composite-list__dropdown-menu {
+  @media (min-width: $screen-sm-min) {
+    float: right !important;
+    right: 0;
+    left: auto;
+  }
+}

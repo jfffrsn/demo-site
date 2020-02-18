@@ -1,0 +1,94 @@
+// -----------------------------------------------------------------------------
+// This file contains element styles.
+// -----------------------------------------------------------------------------
+
+
+$light-color: #f7f7f7;
+$dark-color: #f00;
+$gray-color: #ccc;
+$white-color: #fff;
+/*===================
+======Modals=========
+===================*/
+.modal-content {
+    position: relative;
+    background-color: $light-color;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: none;
+    //@include round(0);
+    outline: 0;
+    @include box-shadow(none);
+    color: $gray-color;
+    .modal-header {
+        position: relative;
+        padding: 20px;
+        border-bottom: 1px solid rgba(0,0,0,.08);
+        button.close {
+            position: absolute;
+            top: -14px;
+            right: -14px;
+            background-color: $dark-color;
+            width: 28px;
+            height: 28px;
+            font-size: 16px;
+            color: $white-color;
+            text-shadow: none;
+            filter: alpha(opacity=100);
+            opacity: 1;
+            @include transition(all .2s ease-in-out);
+            border-radius: 50%;
+            &:hover, &:active, &:focus {
+                filter: alpha(opacity=100);
+                opacity: 1;
+                 transform: rotate(90deg);
+            }
+        }
+    }
+    .modal-footer {
+        padding: 15px 20px;
+        border-top: 1px solid rgba(0,0,0,.08);
+    }
+}
+
+.account {
+    .modal-content {
+        background-color: $white-color;
+        .modal-body {
+            overflow: hidden;
+            padding: 0px;
+            .display-table { margin-left: 0px; }
+            .inner-content {
+                padding: 100px 40px;
+                position: relative;
+                .or {
+                    background-color: $white-color;
+                    position: absolute;
+                    top: 50%;
+                    right: -35px;
+                    margin-top: -20px;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    z-index: 999;
+                    //@include round(100%);
+                    //@include box-shadow-dark;
+                }
+            }
+            .close {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                color: $white-color;
+                text-shadow: none;
+                font-weight: 400;
+                z-index: 999;
+                border: 1px solid $white-color;
+                //@include round(100%);
+            }
+        }
+    }
+}

@@ -1,0 +1,69 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+$brand-primary:         #2a437c !default; 
+$brand-secondary:       #802148 !default;
+$brand-tertiary:        #9bc949 !default;
+$brand-success:         #5cb85c !default;
+$brand-info:            #5bc0de !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+
+$text-color:            #333e48 !default;
+$text-headings-color:   #333e48 !default;
+
+
+//** Global textual link color.
+$link-color:            #333e48 !default;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      darken($link-color, 15%) !default;
+//** Link hover decoration.
+$link-hover-decoration: underline !default;
+
+
+
+
+$font-family-sans-serif:  'Lato', Helvetica, Arial, sans-serif !default;
+$headings-font-family:    'Lato', Helvetica, Arial, sans-serif  !default;
+
+$padding-base: 8px !default;
+
+$border-radius-base:        4px !default;
+$border-radius-large:       6px !default
+$border-radius-small:       3px !default;
+
+
+$gray1: #e0e0e0; //rename this later
+
+
+$form-border-color: #b2b2b2;
+$form-border-color-hover: $brand-primary;
+
+//topbar
+$topbar-bg: $brand-primary;
+
+$topbar-nav-color: #cfcad2;
+$topbar-nav-color-hover: #cfcad2;
+
+//
+$topbar-search-field-bg: #928f99;
+
+
+//navbar
+$header-bg: $brand-primary;
+$header-height-mobile: 60px;
+$header-height: 88px;
+
+$header-nav-color: #fff;
+$header-nav-color-hover: #fff;
+
+
+$mobile-nav-color: #333e48;
+$mobile-nav-color-hover: #333e48;
+
+//footer
+$footer-bg: $brand-primary;
+$footer-color: #fafafa;
+$footer-link-color: #fafafa;
+$footer-link-color-hover: #fafafa;

@@ -1,0 +1,181 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the button component.
+//ibtn 
+// -----------------------------------------------------------------------------
+
+//variables
+// 1. Colors
+// ==========================================================================
+
+
+
+// 2. Variables
+// ==========================================================================
+
+// Shared styles
+$ibtn-border: 0;
+$ibtn-background-focus: lighten($brand-primary, 4%) !default;
+$ibtn-font-size: 1.5rem !default;
+$ibtn-font-weight: 400 !default;
+
+$ibtn-height: 40px !default;
+$ibtn-width: 40px !default;
+$ibtn-padding: 0 !default;
+$ibtn-radius: 2px !default;
+
+// Disabled styles
+$ibtn-disabled-background: #DFDFDF !default;
+$ibtn-disabled-color: #9F9F9F !default;
+
+// Raised buttons
+$ibtn-raised-background: transparent;
+$ibtn-raised-background-hover: #eee !default;
+$ibtn-raised-color: #bdbdbd !default;
+$ibtn-raised-color-hover: #333 !default;
+
+// xsmall buttons
+$ibtn-xsmall-height: $ibtn-height * .6 !default;
+$ibtn-xsmall-width: $ibtn-xsmall-height !default;
+
+// small buttons
+$ibtn-small-height: $ibtn-height * .8 !default;
+$ibtn-small-width: $ibtn-small-height !default;
+// Large buttons
+$ibtn-large-height: $ibtn-height * 1.5 !default;
+$ibtn-large-width: $ibtn-large-height !default;
+
+
+///
+
+//ibtn
+
+/////////////
+
+
+.ibtn {
+  text-decoration: none;
+  color: $ibtn-raised-color;
+  fill: $ibtn-raised-color;
+  background-color: $ibtn-raised-background;
+  text-align: center;
+  transition: .2s ease-out;
+  cursor: pointer;
+
+  font-size: $ibtn-font-size;
+  font-weight: $ibtn-font-weight;
+
+  border: $ibtn-border;
+  border-radius: $ibtn-radius;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: $ibtn-height;
+  width: $ibtn-width;
+  line-height: $ibtn-height;
+  padding: $ibtn-padding;
+  vertical-align: middle;
+  // Gets rid of tap active state
+  -webkit-tap-highlight-color: transparent;
+
+  &:hover, &:focus {
+    background-color: $ibtn-raised-background-hover;
+    color: $ibtn-raised-color-hover;
+    fill: $ibtn-raised-color-hover;
+    text-decoration: none;
+  }
+
+   &:focus {
+
+    outline: 0;
+  }
+
+  // default button
+  &--default {
+  background-color: #ccc;
+  color: #333;
+
+      &:hover {
+      background-color: #bbb;
+      color: #333;
+      text-decoration: none;
+      }
+
+      &:focus {
+      background-color: #bbb;
+      outline: 0;
+      }
+
+  }
+
+ &--rounded{
+  border-radius: 50%;
+ }
+
+ &--primary{
+  color: $brand-primary;
+ }
+
+  &--xsmall {
+    height: $ibtn-xsmall-height;
+    width: $ibtn-xsmall-width;
+    line-height: $ibtn-xsmall-height;
+    font-size: 12px;
+    padding:0 $padding-base;
+  }
+
+  // small button
+  &--small {
+    height: $ibtn-small-height;
+    width: $ibtn-small-width;
+    line-height: $ibtn-small-height;
+    font-size: 12px;
+  }
+
+  // Large button
+  &--large {
+    height: $ibtn-large-height;
+    width: $ibtn-large-width;
+    line-height: $ibtn-large-height;
+  }
+
+  // Block button
+  &--block {
+    display: block;
+    width: 100%; //button tag needs
+  }
+
+
+
+
+  // Disabled
+  &--disabled {
+    pointer-events: none;
+    background-color: $ibtn-disabled-background !important;
+    box-shadow: none;
+    color: $ibtn-disabled-color !important;
+    cursor: default;
+
+    &:hover {
+      background-color: $ibtn-disabled-background !important;
+      color: $ibtn-disabled-color !important;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

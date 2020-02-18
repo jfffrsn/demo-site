@@ -1,0 +1,74 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the component 'find presentation'. 
+// -----------------------------------------------------------------------------
+
+//page cover
+.find-pres-overlay {
+  opacity: .75;
+  transition: opacity .15s ease-out 0s;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1001;
+  background-color: rgba(0,0,0,1);
+
+}
+
+
+.find-pres{
+    background-color: hotpink;
+
+
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+
+    z-index: 2000000000;
+}
+
+
+
+///
+.noscroll{
+    overflow: hidden; //add to body to stop page behind from scrolling
+}
+
+
+
+    
+    .overlay-wrapper {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: auto;
+        transition: all .15s ease-out 0s;
+        background-color: rgba(0,0,0, 0.75);
+        //z-index: 1001;
+    }
+    
+
+    
+    .overlay-wrapper .overlay-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        //z-index: 2000000000;
+        color: #fff;
+
+    }
+
+//demo only
+
+    .foop{
+         //background-color: red;
+         
+    }
+
+    .media{  margin-top: 30px;}

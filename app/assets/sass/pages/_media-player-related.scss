@@ -1,0 +1,61 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the media player page.
+// Related section
+// -----------------------------------------------------------------------------
+
+
+.player-related-section{ 
+     @extend .col-sm-12;
+     margin-bottom: 4rem;
+}
+
+
+///
+//Related
+
+
+
+.media-related{ }
+
+
+
+.media-related-title{  
+    font-size: 2rem; 
+    line-height: 1.3334; 
+    font-family: $font-family-sans-serif;
+      color: #212121; 
+    text-transform: uppercase;
+     margin:0 0 1em 0; padding:0; 
+         font-weight: 500;
+    letter-spacing: 0;
+    }
+
+.related-item-image{ display: block; margin:0 0 1em 0; 
+    img{ display: block; margin: 0; padding: 0;}
+}
+.related-item-title{ font-weight: 500; font-size: 1.4rem; line-height: 1.3334; font-family: $font-family-base;  margin: 0 0 5px 0; padding: 0; 
+    a{ color: #111;
+        &:hover,&:focus{ text-decoration:none; color: #000;}
+    }
+}
+.related-item-speaker{ display: inline; margin: 0; padding: 0; color: #868686; 
+        li { 
+            //display: inline; 
+            list-style: none; 
+            margin: 0; 
+            padding: 0;
+
+            display: inline-block;
+            overflow: hidden;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            &:after { content: ", "; }
+            &:last-child:after { content: ""; }
+        }
+}
+
+.related-item-image-group{ position:relative;}
+.related-item-duration{ background: rgba(0,0,0,.6); color:rgba(255,255,255,.8); position: absolute; bottom: 0; right: 0; z-index: 100; padding: .333em; font-weight: 500; font-size: 1.1rem; }
+
