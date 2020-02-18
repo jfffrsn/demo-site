@@ -598,7 +598,7 @@
 
 	
 <div class="meeting-pres-sidebar__filter-more">
-<button class="meeting-pres-filter-more-btn">See More</button>
+<button class="meeting-pres-filter-more-btn" data-toggle="modal" data-target="#exampleModal">See More</button>
 </div><!-- /.meeting-pres-sidebar__filter-more -->
 				
 </div><!-- /.meeting-pres-filter__body -->
@@ -684,7 +684,7 @@
 
 
 <div class="meeting-pres-sidebar__filter-more">
-<button class="meeting-pres-filter-more-btn">See More</button>
+<button class="meeting-pres-filter-more-btn" data-toggle="modal" data-target="#exampleModal">See More</button>
 </div><!-- /.meeting-pres-sidebar__filter-more -->
 				
 </div><!-- /.meeting-pres-filter__body -->
@@ -1177,6 +1177,174 @@ Webinars
 
 
 </div><!-- /.page -->
+
+<style>
+    .checkbox-list__item img {
+        width: 1em;
+    }
+    .modal-body {
+        max-height: calc(100vh - 230px);
+        overflow-y: auto;
+    }
+	
+    #filterModal .modal-list {
+        margin-top: 1em;
+    }
+
+    #filterModal h5 {
+        margin: 1em 0;
+        text-transform: capitalize;
+    }
+
+    #modal-facet-tabs a {
+        text-transform: capitalize;
+    }
+
+    #modal-facet-tabs .spinner-loading {
+        margin-left: 5px;
+        width: 20px;
+        height: auto;
+    }
+	
+
+</style>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+		
+		
+
+
+
+
+
+
+		<div class="cmodal">
+	
+			<div class="cmodal__hdr cmodal__hdr--flat">
+			<h4 class="cmodal__title" id="filterModalLabel">All Items</h4>
+			<span class="cmodal__close">
+			<button type="button" class="cmodal-close-btn-flat" data-dismiss="modal" aria-label="Close">
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+			<path d="M15.99 14.824L14.833 16 8 9.157 1.167 15.99.01 14.833 6.843 8.02.01 1.175 1.167 0 8.02 6.843 14.842.01l1.138 1.157L9.177 8z"></path>
+			</svg>
+			</button>	
+			</span><!-- /.cmodal__close -->
+			</div><!-- /.cmodal__hdr -->
+			
+			
+			
+			<div class="cmodal__content">
+			
+				
+			<!--
+				<div id="modal-selected-facets"><ul class="modal-selected-facets-list">(No items selected)</ul></div>
+			-->
+			
+								<!-- Nav tabs -->
+								<ul class="nav nav-tabs" id="modal-facet-tabs" role="tablist" style="margin-bottom: 20px;">
+										<li role="presentation" class="active" id="conferences-tab-header"><a href="#conferences-tab" aria-controls="conferences-tab" role="tab" data-toggle="tab" aria-expanded="true">Conferences</a></li>
+										<li role="presentation" ><a href="#tracks-tab" aria-controls="tracks-tab" role="tab" data-toggle="tab" aria-expanded="false">Regional Conferences</a></li>
+										<li role="presentation" ><a href="#sessions-tab" aria-controls="tracks-tab" role="tab" data-toggle="tab" aria-expanded="false">Categories</a></li>
+										<li role="presentation" ><a href="#types-tab" aria-controls="types-tab" role="tab" data-toggle="tab" aria-expanded="false">Content Types</a></li>
+								</ul>
+			
+								<!-- Tab panes -->
+								<div class="tab-content">
+							
+										<div role="tabpanel" class="tab-pane active" id="conferences-tab">
+												<div class="meeting-pres-filter__body modal-list">
+														<input type="text" class="form-control filter" placeholder="Filter Conferences..."><br>
+														<ul class="checkbox-list filter-list" id="full-list-conference">
+																<li class="checkbox-list__item"><input class="styled-checkbox modal-facet" id="modal-facet-conference-1" type="checkbox" data-id="1" data-name="2019 Annual Conference" data-category="conference"><label for="modal-facet-conference-1"><span class="truncate-text">2019 Annual Conference</span><span class="checkbox-count">174</span></label></li>
+																<li class="checkbox-list__item"><input class="styled-checkbox modal-facet" id="modal-facet-conference-2" type="checkbox" data-id="2" data-name="2018 Annual Conference" data-category="conference"><label for="modal-facet-conference-2"><span class="truncate-text">2018 Annual Conference</span><span class="checkbox-count">86</span></label></li>
+																<li class="checkbox-list__item"><input class="styled-checkbox modal-facet" id="modal-facet-conference-3" type="checkbox" data-id="3" data-name="2019 Annual Conference" data-category="conference"><label for="modal-facet-conference-3"><span class="truncate-text">2017 Annual Conference</span><span class="checkbox-count">73</span></label></li>
+																<li class="checkbox-list__item"><input class="styled-checkbox modal-facet" id="modal-facet-conference-4" type="checkbox" data-id="4" data-name="2018 Annual Conference" data-category="conference"><label for="modal-facet-conference-4"><span class="truncate-text">2016 Annual Conference</span><span class="checkbox-count">22</span></label></li>
+																<li class="checkbox-list__item"><input class="styled-checkbox modal-facet" id="modal-facet-conference-5" type="checkbox" data-id="5" data-name="2019 Annual Conference" data-category="conference"><label for="modal-facet-conference-5"><span class="truncate-text">2015 Annual Conference</span><span class="checkbox-count">13</span></label></li>														</ul>
+												</div>
+										</div>
+							
+										<div role="tabpanel" class="tab-pane" id="tracks-tab" >
+												<div class="meeting-pres-filter__body modal-list">
+														<input type="text" class="form-control filter" placeholder="Filter Regional Conferences..."><br>
+														<ul class="checkbox-list filter-list" id="full-list-track">
+																<li class="checkbox-list__item"><input class="styled-checkbox modal-facet" id="modal-facet-track-1" type="checkbox" data-id="1"><label for="modal-facet-track-1"><span class="truncate-text">Jaipur, India</span><span class="checkbox-count">14</span></label></li>
+																<li class="checkbox-list__item"><input class="styled-checkbox modal-facet" id="modal-facet-track-2" type="checkbox" data-id="2"><label for="modal-facet-track-2"><span class="truncate-text">Durham, North Carolina</span><span class="checkbox-count">23</span></label></li>
+																<li class="checkbox-list__item"><input class="styled-checkbox modal-facet" id="modal-facet-track-3" type="checkbox" data-id="3"><label for="modal-facet-track-3"><span class="truncate-text">Vancouver, Washington</span><span class="checkbox-count">32</span></label></li>
+																<li class="checkbox-list__item"><input class="styled-checkbox modal-facet" id="modal-facet-track-4" type="checkbox" data-id="4"><label for="modal-facet-track-4"><span class="truncate-text">Irving, Texas</span><span class="checkbox-count">16</span></label></li>
+																<li class="checkbox-list__item"><input class="styled-checkbox modal-facet" id="modal-facet-track-5" type="checkbox" data-id="5"><label for="modal-facet-track-5"><span class="truncate-text">Cambridge, Massachusetts</span><span class="checkbox-count">17</span></label></li>
+																<li class="checkbox-list__item"><input class="styled-checkbox modal-facet" id="modal-facet-track-6" type="checkbox" data-id="6"><label for="modal-facet-track-6"><span class="truncate-text">Grand Rapids, Michigan</span><span class="checkbox-count">31</span></label></li>
+														</ul>
+												</div>
+										</div>
+							
+										<div role="tabpanel" class="tab-pane" id="sessions-tab">
+												<div class="meeting-pres-filter__body modal-list">
+														<input type="text" class="form-control filter" placeholder="Filter Categories..."><br>
+														<ul class="checkbox-list filter-list" id="full-list-session">
+															<li class="checkbox-list__item"><input class="styled-checkbox modal-facet" id="modal-facet-session-2" type="checkbox" data-id="2"><label for="modal-facet-session-2"><span class="truncate-text">Animal Control</span><span class="checkbox-count">12</span></label></li>
+															
+															<li class="checkbox-list__item"><input class="styled-checkbox modal-facet" id="modal-facet-session-3" type="checkbox" data-id="3"><label for="modal-facet-session-3"><span class="truncate-text">Certificate Programs</span><span class="checkbox-count">12</span></label></li>
+															
+															<li class="checkbox-list__item"><input class="styled-checkbox modal-facet" id="modal-facet-session-4" type="checkbox" data-id="4"><label for="modal-facet-session-4"><span class="truncate-text">Community Engagement</span><span class="checkbox-count">12</span></label></li>
+															
+															<li class="checkbox-list__item"><input class="styled-checkbox modal-facet" id="modal-facet-session-5" type="checkbox" data-id="5"><label for="modal-facet-session-5"><span class="truncate-text">Council-Manager Relations</span><span class="checkbox-count">12</span></label></li>
+															
+															<li class="checkbox-list__item"><input class="styled-checkbox modal-facet" id="modal-facet-session-6" type="checkbox" data-id="6"><label for="modal-facet-session-6"><span class="truncate-text">Cybersecurity</span><span class="checkbox-count">12</span></label></li>
+															
+															<li class="checkbox-list__item"><input class="styled-checkbox modal-facet" id="modal-facet-session-7" type="checkbox" data-id="7"><label for="modal-facet-session-7"><span class="truncate-text">Data Management</span><span class="checkbox-count">12</span></label></li>
+															
+															<li class="checkbox-list__item"><input class="styled-checkbox modal-facet" id="modal-facet-session-8" type="checkbox" data-id="8"><label for="modal-facet-session-8"><span class="truncate-text">Economic Development</span><span class="checkbox-count">12</span></label></li>
+															
+															<li class="checkbox-list__item"><input class="styled-checkbox modal-facet" id="modal-facet-session-9" type="checkbox" data-id="9"><label for="modal-facet-session-9"><span class="truncate-text">Employee Engagement</span><span class="checkbox-count">12</span></label></li>
+															
+															<li class="checkbox-list__item"><input class="styled-checkbox modal-facet" id="modal-facet-session-10" type="checkbox" data-id="10"><label for="modal-facet-session-10"><span class="truncate-text">Equity and Inclusion</span><span class="checkbox-count">12</span></label></li>
+															
+															<li class="checkbox-list__item"><input class="styled-checkbox modal-facet" id="modal-facet-session-11" type="checkbox" data-id="11"><label for="modal-facet-session-11"><span class="truncate-text">Ethics</span><span class="checkbox-count">12</span></label></li>
+															
+															<li class="checkbox-list__item"><input class="styled-checkbox modal-facet" id="modal-facet-session-12" type="checkbox" data-id="12"><label for="modal-facet-session-12"><span class="truncate-text">Human Resources/Recruitment/Labor Relations</span><span class="checkbox-count">12</span></label></li>
+															
+															<li class="checkbox-list__item"><input class="styled-checkbox modal-facet" id="modal-facet-session-13" type="checkbox" data-id="13"><label for="modal-facet-session-13"><span class="truncate-text">International Affiliate Programs</span><span class="checkbox-count">12</span></label></li>
+															
+															<li class="checkbox-list__item"><input class="styled-checkbox modal-facet" id="modal-facet-session-14" type="checkbox" data-id="14"><label for="modal-facet-session-14"><span class="truncate-text">International Educational Partner Programs</span><span class="checkbox-count">12</span></label></li>
+															
+															<li class="checkbox-list__item"><input class="styled-checkbox modal-facet" id="modal-facet-session-15" type="checkbox" data-id="15"><label for="modal-facet-session-15"><span class="truncate-text">Leadership/Team Building</span><span class="checkbox-count">12</span></label></li>
+															
+							</ul>
+												</div>
+										</div>
+
+
+										<div role="tabpanel" class="tab-pane" id="types-tab" >
+												<div class="meeting-pres-filter__body modal-list">
+																<input type="text" class="form-control filter" placeholder="Filter Types list..."><br>
+																<ul class="checkbox-list filter-list" id="full-list-type">
+																				<li class="checkbox-list__item"><input class="styled-checkbox modal-facet" id="modal-facet-type-1" type="checkbox" data-id="1"><label for="modal-facet-type-1"><span class="truncate-text">Files</span><span class="checkbox-count">14</span></label></li>
+																				<li class="checkbox-list__item"><input class="styled-checkbox modal-facet" id="modal-facet-type-2" type="checkbox" data-id="2"><label for="modal-facet-type-2"><span class="truncate-text">Products</span><span class="checkbox-count">23</span></label></li>
+																						</ul>
+												</div>
+								</div>
+							
+								</div><!-- /.tab-content -->
+							
+					 
+				
+						<div class="cmodal__ftr">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary" id="applyFiltersButton">Apply Filters</button>
+						</div><!-- /.cmodal__ftr -->
+						
+			
+			
+			
+			
+			
+			</div><!-- /.cmodal__content -->
+			
+			</div>
+  </div>
+</div>
 
 
 
